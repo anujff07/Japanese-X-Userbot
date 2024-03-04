@@ -1,4 +1,3 @@
-# Create Modules By @xtsea
 from pyrogram import *
 
 PREFIX = [".", "?", "!", "*"]
