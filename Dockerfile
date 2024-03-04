@@ -1,13 +1,9 @@
-FROM worker/uputt-userbot:buster
-
-RUN git clone -b Japanese-X-Userbot https://github.com/Japanese-Userbots/Japanese-X-Userbot /home/Japanese-X-Userbot/ \
-    && chmod 777 /home/pyrozuuserbot \
-    && mkdir /home/pyrozuuserbot/bin/
-
-COPY ./sample_config.env ./config.env* /home/Japanese-X-Userbot/
-
-WORKDIR /home/Japanese-X-Userbot/
-
-RUN pip install -r requirements.txt
-
-CMD ["bash","start"]
+FROM python:3.9.7-slim-buster
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install git curl python3-pip ffmpeg -y
+RUN pip3 install -U pip
+RUN python3 -m pip install --upgrade pip
+COPY . /app/
+WORKDIR /app/
+RUN pip3 install -U -r requirements.txt
+CMD ["bash","start.sh"]
