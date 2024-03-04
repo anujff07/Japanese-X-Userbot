@@ -45,7 +45,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("X").info("Japanese-X-Userbot It's Active, Dick🐣")
+    LOGGER("X").info("Japanese-X-Userbot is Active, Dick🐣")
     install()
     heroku()
     LOOP.run_until_complete(main())
