@@ -25,7 +25,7 @@ unmute_permissions = ChatPermissions(
 )
 async def set_chat_photo(client: Client, message: Message):
     X = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
-    can_change_admin = putt.can_change_info
+    can_change_admin = X.can_change_info
     can_change_member = message.chat.permissions.can_change_info
     if not (can_change_admin or can_change_member):
         await message.edit_text("You don't have enough permission")
