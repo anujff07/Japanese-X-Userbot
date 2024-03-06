@@ -174,7 +174,7 @@ async def kick_user(client: Client, message: Message):
     Uputt = await edit_or_reply(message, "`Processing...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_restrict_members:
-        return await Uputt.edit("I don't have enough permissions")
+        return await X.edit("I don't have enough permissions")
     if not user_id:
         return await X.edit("I can't find that user.")
     if user_id == client.me.id:
