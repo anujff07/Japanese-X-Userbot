@@ -104,6 +104,6 @@ add_command_help(
             "fscreen [jumlah]",
             "Displays a fake screenshot action. (Use in Private Chat).",
         ],
-        ["fstop", "Memberhentikan tindakan palsu dalam obrolan."],
+        ["fstop", "Stops fake actions in chat."],
     ],
 ) 
