@@ -646,14 +646,14 @@ async def zeyenk(client: Client, message: Message):
 
 @Client.on_message(filters.command("gabut", cmd) & filters.me)
 async def menggabut(client: Client, message: Message):
-    e = await edit_or_reply(message, "`PERNAAHHHHH KAHHH KAUUU MENGIRA`")
-    await e.edit("`SEPEEERTIIIII APAAAA BENTUKKKKKKK CINTAAAA`")
-    await e.edit("`RAMBUUUT WARNAAA WARNII`")
-    await e.edit("`BAGAI GULALI`")
+    e = await edit_or_reply(message, "`PERNAAHHHHH KAHHH KAUUU COUNTING`")
+    await e.edit("`WHAT KKKKKK LOVE LOOKS LIKE`")
+    await e.edit("`HAIRBUUUT WARNAAA WARNII`")
+    await e.edit("`LIKE TOOTBALL`")
     await e.edit("`IMUUUTTTTT LUCUUU`")
-    await e.edit("`WALAAUUUU TAK TERLALU TINGGI`")
+    await e.edit("`ALTHOUGH IT'S NOT TOO HIGH`")
     await e.edit("`GW GABUUTTTT`")
-    await e.edit("`EMMMM BACOTNYA`")
+    await e.edit("`EMMMM THE BACOT`")
     await e.edit("`GABUTTTT WOI GABUT`")
     await e.edit("🙈🙈🙈🙈")
     await e.edit("🙉🙉🙉🙉")
@@ -1452,12 +1452,12 @@ add_command_help(
     [
         ["fuck", "To display the middle finger animation."],
         ["ror", "To display a ror animation."],
-        ["dino", "Untuk menampilkan animasi dikejar dino."],
-        ["santet", "Untuk menampilkan animasi menyantet onlen."],
-        ["gabut", "Untuk menampilkan animasi gabut."],
-        ["sayang", "Untuk menampilkan animasi sayang."],
-        ["hack", "Untuk menampilkan animasi ngehek palsu."],
-        ["bomb", "Untuk menampilkan animasi Bomb."],
+        ["dino", "To display an animation of being chased by a dino."],
+        ["santet", "To display an online blackmail animation."],
+        ["gabut", "To display the latch animation."],
+        ["sayang", "To display animation darling."],
+        ["hack", "To display a fake kicking animation."],
+        ["bomb", "To display the Bomb animation."],
         ["brain", "Untuk menampilkan animasi  Brain 🧠."],
         ["kontol", "Untuk menampilkan art kontol."],
         ["penis", "Untuk menampilkan art penis dengan emoji."],
