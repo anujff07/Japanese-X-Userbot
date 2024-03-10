@@ -14,7 +14,7 @@ def pmowner(client, callback_query):
     client.send_message(user_id, message)
     client.answer_callback_query(callback_query.id, text="Message sent")
 
-logouputt = [
+logoX = [
     "https://graph.org/file/0ed7be5cf4fdbf052afa9.jpg"
 ]
 
