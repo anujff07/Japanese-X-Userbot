@@ -448,7 +448,7 @@ async def kocok(client: Client, message: Message):
     await e.edit("8✊===D💦💦💦💦💦💦??💦")
     await e.edit("8===✊D💦💦💦💦💦💦💦💦💦")
     await e.edit("8==✊=D💦💦💦💦💦💦💦💦💦💦")
-    await e.edit("8=✊==D Lah Kok Habis?")
+    await e.edit("8=✊==D That's why it's over?")
     await e.edit("😭😭😭😭")
 
 
@@ -569,7 +569,7 @@ async def adadino(client: Client, message: Message):
     await typew.edit("`🏃                       🦖`")
     await typew.edit("`🏃                      🦖`")
     await typew.edit("`🏃                     🦖`")
-    await typew.edit("`🏃   `LARII`          🦖`")
+    await typew.edit("`🏃   `LARII`         🦖`")
     await typew.edit("`🏃                   🦖`")
     await typew.edit("`🏃                  🦖`")
     await typew.edit("`🏃                 🦖`")
@@ -979,7 +979,7 @@ async def helikopter(client: Client, message: Message):
         "╬═╬ \n"
         "╬═╬ \n"
         "╬═╬ \n"
-        "╬═╬ Hallo Semuanya :) \n"
+        "╬═╬ Hello Everything :) \n"
         "╬═╬☻/ \n"
         "╬═╬/▌ \n"
         "╬═╬/ \\ \n",
@@ -990,7 +990,7 @@ async def helikopter(client: Client, message: Message):
 async def dornembak(client: Client, message: Message):
     await edit_or_reply(
         message,
-        "_/﹋\\_\n" "(҂`_´)\n" "<,︻╦╤─ ҉\n" r"_/﹋\_" "\n**Mau Jadi Pacarku Gak?!**",
+        "_/﹋\\_\n" "(҂`_´)\n" "<,︻╦╤─ ҉\n" r"_/﹋\_" "\n**Do you want to be my girlfriend??!**",
     )
 
 
@@ -998,7 +998,7 @@ async def dornembak(client: Client, message: Message):
 async def ngebundir(client: Client, message: Message):
     await edit_or_reply(
         message,
-        "`Dadah Semuanya...`          \n　　　　　|"
+        "`Drugs Everything...`          \n　　　　　|"
         "\n　　　　　| \n"
         "　　　　　| \n"
         "　　　　　| \n"
@@ -1020,7 +1020,7 @@ async def kocok(client: Client, message: Message):
     await asyncio.sleep(2)
     await e.edit("Aku Ange 😫")
     await asyncio.sleep(2)
-    await e.edit("Ayuukk Picies Yang 🤤")
+    await e.edit("Come on Pisces Yang 🤤")
 
 
 @Client.on_message(filters.command(["lipkol", "sleepcall"], cmd) & filters.me)
@@ -1029,18 +1029,18 @@ async def lipkol(client: Client, message: Message):
     await asyncio.sleep(2)
     await e.edit("Kangeeen 👉👈")
     await asyncio.sleep(2)
-    await e.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
+    await e.edit("Pinkie's sleeping bag is Yang 🥺👉👈")
     
 
 @Client.on_message(filters.command(["nakal", "bandel"], cmd) & filters.me)
 async def nakal(client: Client, message: Message):
     e = await edit_or_reply(message, "Ayanggg ih🥺")
     await asyncio.sleep(2)
-    await e.edit("Nakal Banget Dah Ayang 🥺")
+    await e.edit("Very naughty bro 🥺")
     await asyncio.sleep(2)
-    await e.edit("Aku Gak Like Ayang 😠")
+    await e.edit("I don't like Ayang 😠")
     await asyncio.sleep(2)
-    await e.edit("Pokoknya Aku Gak Like Ih 😠")
+    await e.edit("Anyway, I don't like Ig 😠")
 
 
 @Client.on_message(filters.command(["awk", "awikwok"], cmd) & filters.me)
@@ -1117,19 +1117,19 @@ async def anjg(client: Client, message: Message):
 @Client.on_message(filters.command("nah", cmd) & filters.me)
 async def nahlove(client: Client, message: Message):
     typew = await edit_or_reply(
-        message, "`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *Ini Buat Kamu`"
+        message, "`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *This is for you`"
     )
     await asyncio.sleep(2)
-    await typew.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💖<\\  *Tapi Bo'ong`")
+    await typew.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💖<\\  *tap IB OO that one`")
 
 
 @Client.on_message(filters.command("santet", cmd) & filters.me)
 async def santet(client: Client, message: Message):
-    typew = await edit_or_reply(message, "`Mengaktifkan Perintah Santet Online....`")
+    typew = await edit_or_reply(message, "`Activates Witchcraft Commands Online....`")
     await asyncio.sleep(2)
-    await typew.edit("`Mencari Nama Orang Ini...`")
+    await typew.edit("`Search for This Person's Name...`")
     await asyncio.sleep(1)
-    await typew.edit("`Santet Online Segera Dilakukan`")
+    await typew.edit("`Online Witchcraft Performed Immediately`")
     await asyncio.sleep(1)
     await typew.edit("0%")
     number = 1
@@ -1432,7 +1432,7 @@ async def santet(client: Client, message: Message):
     await asyncio.sleep(0.03)
     await typew.edit(str(number) + "%   ████████████████▌")
     await asyncio.sleep(1)
-    await typew.edit("**Target Berhasil Tersantet Online 🥴**")
+    await typew.edit("**Target Successfully Scammed Online 🥴**")
 
 @Client.on_message(filters.command(["ror", "ah"], cmd) & filters.me)
 async def hearts(client: Client, message: Message):
@@ -1450,8 +1450,8 @@ async def hearts(client: Client, message: Message):
 add_command_help(
     "animation",
     [
-        ["fuck", "Untuk menampilkan animasi jari tengah."],
-        ["ror", "Untuk menampilkan animasi ror."],
+        ["fuck", "To display the middle finger animation."],
+        ["ror", "To display a ror animation."],
         ["dino", "Untuk menampilkan animasi dikejar dino."],
         ["santet", "Untuk menampilkan animasi menyantet onlen."],
         ["gabut", "Untuk menampilkan animasi gabut."],
