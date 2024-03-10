@@ -44,7 +44,7 @@ async def module_help(client: Client, message: Message):
                 ac.add_row([x[0], x[1] if len(x) >= 2 else None])
             xx = await client.send_message(
                 message.chat.id,
-                f"```{str(ac)}```\n• @Japanese_Support_Chat × @Nobitaa_xd•",
+                f"```{str(ac)}```\n• @Japanese_Userbot_Chat × @Nobitaa_xd•",
                 reply_to_message_id=ReplyCheck(message),
             )
             await xx.reply(
