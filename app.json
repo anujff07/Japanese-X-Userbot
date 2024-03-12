@@ -1,6 +1,6 @@
 {
   "name": "Japanese-X-Userbot",
-  "description": "[Japanese-X-Userbot] is a modular Telegram userbot running on Python3 with the help of Pyrogram Library.  Powered by Japanese-X-Userbot.",
+  "description": "[Japanese-X-Userbot] is a modular Telegram userbot running on Python3 with the help of Pyrogram Library",
     "logo": "https://telegra.ph//file/d77179f5ad209254a0ce4.jpg",
 
   "stack": "heroku-22",
