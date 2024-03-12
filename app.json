@@ -1,1 +1,54 @@
+{
+  "name": "Japanese-X-Userbot",
+  "description": "[Japanese-X-Userbot] is a modular Telegram userbot running on Python3 with the help of Pyrogram Library.  Powered by Japanese-X-Userbot.",
+    "logo": "https://telegra.ph//file/d77179f5ad209254a0ce4.jpg",
 
+  "stack": "heroku-22",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Create a bot in BotFather then copy the bot token here",
+      "required": true
+    },
+    "STRING_SESSION1": {
+      "description": "Get String Session Pyrogram di Grup"
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "Ambil Api Key nya Di Sini Kontol https://openai.com/api/",
+      "required": false,
+      "value": ""
+    },
+    "BOTLOG_CHAT_ID": {
+      "description": "Whether you want to do it or not, it's up to your father to fuck",
+      "required": false,
+      "value": "-100"
+    },
+    "HEROKU_API_KEY": {
+      "description": "Get your Heroku API KEY here » https://dashboard.heroku.com/account",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Enter the name of the Heroku App, look at the top, don't be blind to the pussy map",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/interconnectit/heroku-buildpack-ffmpeg"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
