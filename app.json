@@ -6,15 +6,15 @@
   "stack": "heroku-22",
   "env": {
     "BOT_TOKEN": {
-      "description": "Buatlah Bot Di BotFather Lalu Salin Token Bot Nya Disini Kontol",
+      "description": "gεт тнιs ғяσм вσтғαтнεя",
       "required": true
     },
     "STRING_SESSION1": {
-      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/Dareensupport » Lalu ketik #string",
+      "description": "ғιℓℓ үσυя ρүяσgяαм sтяιηg sεssιση",
       "required": true
     },
     "OPENAI_API_KEY": {
-      "description": "Ambil Api Key nya Di Sini Kontol https://openai.com/api/",
+      "description": "gεт тнε σρεηαι αρι кεү ғяσм https://openai.com/api/",
       "required": false,
       "value": ""
     },
