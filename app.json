@@ -1,44 +1,54 @@
 {
-    "name": "𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆 𝑿 𝑼𝒔𝒆𝒓𝒃𝒐𝒕",
-    "description": "ωσяℓ∂ ℓαяgεsт αη∂ ғαsтεsт υsεявσт ηεvεя εxιsтε∂ ιη тнιs ωσяℓ∂",
-    "logo": "https://mallucampaign.in/images/img_1707205327.jpg",
-    "keywords": ["pyrogram", "userbot"],
-    "repository": "https://github.com/Japanese-Userbots/Japanese-X-Userbot",
-  "stack": "heroku-22",
-    "env": {
-       "API_ID": {
-            "description": "Get this value from my.telegram.org.",
-            "required": true
-       }, 
-      "API_HASH": {
-            "description": "Get this value from my.telegram.org.",
-            "required": true
-      },
-      
-        "BOT_TOKEN": {
-            "description": "ꜰɪʟʟ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏᴋᴇɴ ɢᴇᴛ ꜰʀᴏᴍ @ʙᴏᴛꜰᴀᴛʜᴇʀ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ",
-            "required": true,
-            "value": ""
-         },
-        "OWNER_ID": {
-            "description": "ꜰɪʟʟ ᴛʜᴇʀᴇ ʏᴏᴜʀ ɪ'ᴅ",
-            "required": true,
-            "value": "6694740726"
-        },
-        "SUDO_USERS": {
-            "description": "ꜰɪʟʟ ᴛʜᴇʀᴇ ʏᴏᴜʀ ɪ'ᴅ",
-            "required": true,
-            "value": "6694740726"
-        },
-        "MONGO_URL": {
-            "description": "ꜰɪʟʟ ᴛʜᴇʀᴇ ᴀɴ ᴍᴏɴɢᴏ ᴅᴀᴛᴀʙᴀꜱᴇ ꜰʀᴏᴍ ᴍᴏɴɢᴏᴅʙ.ᴄᴏᴍ",
-            "required": true,
-            "value": ""
-        },
-      "STRING_SESSION1": {
-            "description": "ꜰɪʟʟ ᴡɪᴛʜ ᴛʜᴇ ᴛᴇʟᴇᴛʜᴏɴ ꜱᴇꜱꜱɪᴏɴ ꜱᴛʀɪɴɢ ꜰʀᴏᴍ",
-            "required": true
-        }
+  "name": "Dareen-Userbot",
+  "description": "[Dareen-Userbot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.  Powered by Dareen-Userbot.",
+    "logo": "https://telegra.ph//file/d77179f5ad209254a0ce4.jpg",
 
+  "stack": "heroku-22",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Buatlah Bot Di BotFather Lalu Salin Token Bot Nya Disini Kontol",
+      "required": true
+    },
+    "STRING_SESSION1": {
+      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/Dareensupport » Lalu ketik #string",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "Ambil Api Key nya Di Sini Kontol https://openai.com/api/",
+      "required": false,
+      "value": ""
+    },
+    "BOTLOG_CHAT_ID": {
+      "description": "Mau Buat Mau Ngga Terserah Bapaa lu Ngentot",
+      "required": false,
+      "value": "-100"
+    },
+    "HEROKU_API_KEY": {
+      "description": "Ambil Heroku API KEY mu disini Tod » https://dashboard.heroku.com/account",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Masukan Nama App heroku, Liat Paling Atas Jangan Buta Map Memek",
+      "required": false
     }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/interconnectit/heroku-buildpack-ffmpeg"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
 }
