@@ -37,9 +37,9 @@ async def shutdown_bot(client: Client, message: Message):
         await client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**X-Pyrobot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**X-Pyrobot** has been turned off!\If you want to turn it back on, please open it heroku",
         )
-    await edit_or_reply(message, "**X-Pyrobot Berhasil di matikan!**")
+    await edit_or_reply(message, "**X-Pyrobot Successfully turned it off!**")
     if HAPP is not None:
         HAPP.process_formation()["worker"].scale(0)
     else:
@@ -51,16 +51,16 @@ async def logs_ubot(client: Client, message: Message):
     if HAPP is None:
         return await edit_or_reply(
             message,
-            "Pastikan `HEROKU_API_KEY` dan `HEROKU_APP_NAME` anda dikonfigurasi dengan benar di config vars heroku",
+            "Make sure `HEROKU_API_KEY` and `HEROKU_APP_NAME` you are configured correctly in config vars heroku",
         )
-    Man = await edit_or_reply(message, "**Sedang Mengambil Logs Heroku**")
+    Man = await edit_or_reply(message, "**Currently Taking Logs Heroku**")
     with open("Logs-Heroku.txt", "w") as log:
         log.write(HAPP.get_log())
     await client.send_document(
         message.chat.id,
         "Logs-Heroku.txt",
         thumb="X/resources/logo.jpg",
-        caption="**Ini Logs Heroku anda**",
+        caption="**This is your Heroku Logs**",
     )
     await Man.delete()
     remove("Logs-Heroku.txt")
@@ -69,8 +69,8 @@ async def logs_ubot(client: Client, message: Message):
 add_command_help(
     "system",
     [
-        ["restart", "Untuk merestart userbot."],
-        ["shutdown", "Untuk mematikan userbot."],
-        ["logs", "Untuk melihat logs userbot."],
+        ["restart", "To restart userbot."],
+        ["shutdown", "To turn off userbot."],
+        ["logs", "To see logs userbot."],
     ],
 ) 
