@@ -45,7 +45,6 @@
       "url": "https://github.com/interconnectit/heroku-buildpack-ffmpeg"
     }
   ],
-  "formation": {
     "worker": {
       "quantity": 1,
       "size": "basic"
