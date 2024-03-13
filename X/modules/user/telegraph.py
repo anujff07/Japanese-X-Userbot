@@ -18,7 +18,7 @@ async def uptotelegraph(client: Client, message: Message):
     X = await edit_or_reply(message, "`Processing . . .`")
     if not message.reply_to_message:
         await X.edit(
-            "**Mohon Balas Ke Pesan, Untuk Mendapatkan Link dari Telegraph.**"
+            "**Please reply to the message, to get the link from Telegraph.**"
         )
         return
     if message.reply_to_message.media:
@@ -33,7 +33,7 @@ async def uptotelegraph(client: Client, message: Message):
             os.remove(m_d)
             return
         U_done = (
-            f"**Berhasil diupload ke** [Telegraph](https://telegra.ph/{media_url[0]})"
+            f"**Successfully uploaded to** [Telegraph](https://telegra.ph/{media_url[0]})"
         )
         await X.edit(U_done)
         os.remove(m_d)
@@ -46,7 +46,7 @@ async def uptotelegraph(client: Client, message: Message):
         except exceptions.TelegraphException as exc:
             await X.edit(f"**ERROR:** `{exc}`")
             return
-        wow_graph = f"**Berhasil diupload ke** [Telegraph](https://telegra.ph/{response['path']})"
+        wow_graph = f"**Successfully uploaded to** [Telegraph](https://telegra.ph/{response['path']})"
         await X.edit(wow_graph)
 
 
@@ -55,7 +55,7 @@ add_command_help(
     [
         [
             f"telegraph atau {cmd}tg",
-            "Balas ke Pesan Teks atau Media untuk mengunggahnya ke telegraph.",
+            "Reply to a Text Message or Media to upload it to telegraph.",
         ],
     ],
 ) 
