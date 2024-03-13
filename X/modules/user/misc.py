@@ -6,7 +6,7 @@ from pyrogram.types import Message
 
 from config import CMD_HANDLER
 from X import *
-from x.helpers.basic import edit_or_reply
+from X.helpers.basic import edit_or_reply
 from X.helpers.PyroHelpers import ReplyCheck
 from X.helpers.tools import get_arg
 from X.utils import s_paste
