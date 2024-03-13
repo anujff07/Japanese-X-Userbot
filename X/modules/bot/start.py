@@ -18,7 +18,7 @@ logoX = [
     "https://graph.org/file/0ed7be5cf4fdbf052afa9.jpg"
 ]
 
-alive_logo = random.choice(logouputt)
+alive_logo = random.choice(logoX)
 
 @app.on_message(filters.command("start") & filters.private)
 async def start(app, message):
