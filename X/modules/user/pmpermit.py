@@ -34,3 +34,19 @@ DEF_UNAPPROVED_MSG = (
 )
 async def incomingpm(client: Client, message: Message):
     try:
+        from X.helpers.SQL.globals import gvarstatus
+        from X.helpers.SQL.pm_permit_sql import is_approved
+    except BaseException:
+        pass
+
+    if gvarstatus("PMPERMIT") and gvarstatus("PMPERMIT") == "false":
+        return
+    if await auto_accept(client, message) or message.from_user.is_self:
+        message.continue_propagation()
+    if message.chat.id != 777000:
+        PM_LIMIT = gvarstatus("PM_LIMIT") or 5
+        getmsg = gvarstatus("unapproved_msg")
+        if getmsg is not None:
+            UNAPPROVED_MSG = getmsg
+        else:
+            UNAPPROVED_MSG = DEF_UNAPPROVED_MSG
