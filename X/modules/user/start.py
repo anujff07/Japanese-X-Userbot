@@ -24,27 +24,27 @@ absen = [
 
 @Client.on_message(filters.command("Tod", [""]) & filters.user(DEVS) & ~filters.me)
 async def tod(_, message: Message):
-   await message.reply("**Bacott luu ngentodddd!😏**")
+   await message.reply("**You bastard is a bitch!😏**")
 
 
 @Client.on_message(filters.command("adel", [""]) & filters.user(DEVS) & ~filters.me)
 async def sheril(_, message: Message):
-   await message.reply("**OSHIII NYAA DAREEN ITUU😡**")
+   await message.reply("**OSHIII I FEEL IT😡**")
 
 
 @Client.on_message(filters.command("Absen", [""]) & filters.user(DEVS) & ~filters.me)
 async def absen(_, message: Message):
-    await message.reply("**Hadirr Dareen Sayanggg🥵**")
+    await message.reply("**Present Japanese Sayanggg🥵**")
     
     
 @Client.on_message(filters.command("Sayang", [""]) & filters.user(DEVS) & ~filters.me)
 async def sayang(_, message: Message):
-    await message.reply("**Iyaaa sayanggg kenapaa?🥰**")
+    await message.reply("**Yes dear, why??🥰**")
 
 
 @Client.on_message(filters.command("Bub", [""]) & filters.user(DEVS) & ~filters.me)
 async def bub(_, message: Message):
-    await message.reply("**BAB BUB BAB BUB EMANG GUA PACAR LOO😡**")
+    await message.reply("**CHAPTER BUB CHAPTER BUB I AM GUY'S BOYFRIEND LOO😡**")
 
 
 @Client.on_message(filters.command("Sun", [""]) & filters.user(DEVS) & ~filters.me)
