@@ -135,7 +135,7 @@ add_command_help(
         ["lock <all or lock type>", "Lock permissions on a group."],
         [
             "unlock <all or unlock type>",
-            "Unlocked permissions in the\unsupported Locks / Unlocks group:` `msg` | `media` | `stickers` | `polls` | `info`  | `invite` | `webprev` |`pin` | `all`.",
+            "Unlocked permissions in the\\unsupported Locks / Unlocks group: `msg` | `media` | `stickers` | `polls` | `info`  | `invite` | `webprev` | `pin` | `all`.",
         ],
     ],
 )
