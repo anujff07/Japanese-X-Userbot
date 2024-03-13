@@ -1,13 +1,12 @@
 import os
 from flask import Flask
-from flask_restful import Resource, Api
 
-app = Flask(__name__)
-api = Api(app)
+app = Flask(__name)
 
-class Greeting (Resource):
-    def get(self):
-        return "ᴜꜱᴇʀʙᴏᴛ ɪꜱ ʀᴜɴɴɪɴɢ!"
+@app.route("/")
+def checkstart():
+    return "userbot is running"
 
-api.add_resource(Greeting, '/')
-app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
+if name == "main__":
+    app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
+```
