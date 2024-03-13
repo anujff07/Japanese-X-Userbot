@@ -321,20 +321,20 @@ add_command_help(
     "pmpermit",
     [
         [
-            f"ok atau {cmd}setuju",
-            "Menerima pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm",
+            f"ok or {cmd}setuju",
+            "Receive someone's message by replying to their message or tags and also to do in pm",
         ],
         [
-            f"tolak atau {cmd}nopm",
-            "Menolak pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm",
+            f"minus or {cmd}nopm",
+            "Reject someone's message by replying to the message or tags and also to do in pm",
         ],
         [
-            "pmlimit <angka>",
-            "Untuk mengcustom pesan limit auto block pesan",
+            "pmlimit <number>",
+            "To customize the auto block message limit message",
         ],
         [
             "pmpermit on/off",
-            "Untuk mengaktifkan atau menonaktifkan PMPERMIT",
+            "To enable or disable PMPERMIT",
         ],
     ],
 )
