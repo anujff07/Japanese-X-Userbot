@@ -18,7 +18,7 @@ profile_photo = "X/modules/cache/pfp.jpg"
 @Client.on_message(filters.command(["block"], cmd) & filters.me)
 async def block_user_func(client: Client, message: Message):
     user_id = await extract_user(message)
-    X = await edit_or_reply(message, "`Sabar Lagi blokir Orgil . . .`")
+    X = await edit_or_reply(message, "`Be patient, block again . . .`")
     if not user_id:
         return await message.edit(
             "Berikan User ID/Username atau reply pesan pengguna untuk membuka blokir."
