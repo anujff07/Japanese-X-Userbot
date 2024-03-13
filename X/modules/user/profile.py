@@ -42,21 +42,21 @@ async def unblock_user_func(client: Client, message: Message):
         return await X.edit("If you are stressed, please take medicine immediately.")
     await client.unblock_user(user_id)
     umention = (await client.get_users(user_id)).mention
-    await message.edit(f"**Berhasil Membuka Blokir Anak kontol Ini ✌** {umention}")
+    await message.edit(f"**Successfully Unblocked This Dick Boy ✌** {umention}")
 
 
 @Client.on_message(filters.command(["setname"], cmd) & filters.me)
 async def setname(client: Client, message: Message):
-    X = await edit_or_reply(message, "`Sabar Lagi Ganti Nama. . .`")
+    X = await edit_or_reply(message, "`Be patient Change name. . .`")
     if len(message.command) == 1:
         return await X.edit(
-            "Berikan teks untuk ditetapkan sebagai nama telegram anda."
+            "Provide text to set as your telegram name."
         )
     elif len(message.command) > 1:
         name = message.text.split(None, 1)[1]
         try:
             await client.update_profile(first_name=name)
-            await X.edit(f"**Berhasil Mengubah Nama Telegram anda Menjadi** `{name}`")
+            await X.edit(f"**Successfully changed your Telegram name to** `{name}`")
         except Exception as e:
             await X.edit(f"**ERROR:** `{e}`")
     else:
