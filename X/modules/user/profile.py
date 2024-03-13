@@ -61,7 +61,7 @@ async def setname(client: Client, message: Message):
             await X.edit(f"**ERROR:** `{e}`")
     else:
         return await X.edit(
-            "Berikan teks untuk ditetapkan sebagai nama telegram anda."
+            "Provide text to set as your telegram name."
         )
 
 
@@ -69,16 +69,16 @@ async def setname(client: Client, message: Message):
 async def set_bio(client: Client, message: Message):
     X = await edit_or_reply(message, "`Processing . . .`")
     if len(message.command) == 1:
-        return await X.edit("Berikan teks untuk ditetapkan sebagai bio.")
+        return await X.edit("Provide text to set as bio.")
     elif len(message.command) > 1:
         bio = message.text.split(None, 1)[1]
         try:
             await client.update_profile(bio=bio)
-            await X.edit(f"**Berhasil Mengubah BIO anda menjadi** `{bio}`")
+            await X.edit(f"**Successfully Changed your BIO to** `{bio}`")
         except Exception as e:
             await X.edit(f"**ERROR:** `{e}`")
     else:
-        return await X.edit("Berikan teks untuk ditetapkan sebagai bio.")
+        return await X.edit("Provide text to set as bio.")
 
 
 @Client.on_message(filters.me & filters.command(["setpfp"], cmd))
@@ -96,10 +96,10 @@ async def set_pfp(client: Client, message: Message):
         await client.set_profile_photo(profile_photo)
         if os.path.exists(profile_photo):
             os.remove(profile_photo)
-        await message.edit("**Foto Profil anda Berhasil Diubah.**")
+        await message.edit("**Your profile photo has been successfully changed.**")
     else:
         await message.edit(
-            "`Balas ke foto apa pun untuk dipasang sebagai foto profile`"
+            "`Reply to any photo to set as a profile photo`"
         )
         await sleep(3)
         await message.delete()
@@ -113,7 +113,7 @@ async def view_pfp(client: Client, message: Message):
     else:
         user = await client.get_me()
     if not user.photo:
-        await message.edit("Foto profil tidak ditemukan!")
+        await message.edit("Profile photo not found!")
         return
     await client.download_media(user.photo.big_file_id, file_name=profile_photo)
     await client.send_photo(
@@ -127,14 +127,14 @@ async def view_pfp(client: Client, message: Message):
 add_command_help(
     "profile",
     [
-        ["block", "Untuk memblokir pengguna telegram"],
-        ["unblock", "Untuk membuka pengguna yang anda blokir"],
-        ["setname", "Untuk Mengganti Nama Telegram."],
-        ["setbio", "Untuk Mengganti Bio Telegram."],
+        ["block", "To block telegram users"],
+        ["unblock", "To open the user you blocked"],
+        ["setname", "To Change Telegram Name."],
+        ["setbio", "To Change Telegram Bio."],
         [
             "setpfp",
-            f"Balas Ke Gambar Ketik {cmd}setpfp Untuk Mengganti Foto Profil Telegram.",
+            f"Reply To Image Type {cmd}setpfp To Change Telegram Profile Photo.",
         ],
-        ["vpfp", "Untuk melihat foto profile pengguna saat ini."],
+        ["vpfp", "To see the current user's profile photo."],
     ],
   ) 
