@@ -21,25 +21,25 @@ async def block_user_func(client: Client, message: Message):
     X = await edit_or_reply(message, "`Be patient, block again . . .`")
     if not user_id:
         return await message.edit(
-            "Berikan User ID/Username atau reply pesan pengguna untuk membuka blokir."
+            "Provide User ID/Username or reply to user message to unblock."
         )
     if user_id == client.me.id:
-        return await X.edit("GOBLOK MANA BISA BLOKIR DIRI SENDIRI.")
+        return await X.edit("ANY FOOL CAN BLOCK YOURSELF.")
     await client.block_user(user_id)
     umention = (await client.get_users(user_id)).mention
-    await message.edit(f"**Berhasil Memblokir Anak Kontol Ini** {umention}")
+    await message.edit(f"**managed to Block This Dick Kid** {umention}")
 
 
 @Client.on_message(filters.command(["unblock"], cmd) & filters.me)
 async def unblock_user_func(client: Client, message: Message):
     user_id = await extract_user(message)
-    X = await edit_or_reply(message, "`Sabar lagi Buka Blokir Orang Tolol . . .`")
+    X = await edit_or_reply(message, "`Be patient and unblock stupid people . . .`")
     if not user_id:
         return await message.edit(
-            "Berikan User ID/Username atau reply pesan pengguna untuk membuka blokir."
+            "Provide User ID/Username or reply to user message to unblock."
         )
     if user_id == client.me.id:
-        return await X.edit("anda stress harap segera minum obat.")
+        return await X.edit("If you are stressed, please take medicine immediately.")
     await client.unblock_user(user_id)
     umention = (await client.get_users(user_id)).mention
     await message.edit(f"**Berhasil Membuka Blokir Anak kontol Ini ✌** {umention}")
