@@ -137,7 +137,7 @@ async def approvepm(client: Client, message: Message):
         reply = message.reply_to_message
         replied_user = reply.from_user
         if replied_user.is_self:
-            await message.edit("Anda tidak dapat menyetujui diri sendiri.")
+            await message.edit("You can't approve of yourself.")
             return
         aname = replied_user.id
         name0 = str(replied_user.first_name)
@@ -146,7 +146,7 @@ async def approvepm(client: Client, message: Message):
         aname = message.chat
         if not aname.type == enums.ChatType.PRIVATE:
             await message.edit(
-                "Saat ini Anda tidak sedang dalam PM dan Anda belum membalas pesan seseorang."
+                "You're not currently in PM and you haven't replied to someone's message."
             )
             return
         name0 = aname.first_name
@@ -154,10 +154,10 @@ async def approvepm(client: Client, message: Message):
 
     try:
         approve(uid)
-        await message.edit(f"**Menerima Pesan Dari** [{name0}](tg://user?id={uid})!")
+        await message.edit(f"**Receiving Messages From** [{name0}](tg://user?id={uid})!")
     except IntegrityError:
         await message.edit(
-            f"[{name0}](tg://user?id={uid}) mungkin sudah disetujui untuk PM."
+            f"[{name0}](tg://user?id={uid}) may have been approved for PM."
         )
         return
 
@@ -176,7 +176,7 @@ async def disapprovepm(client: Client, message: Message):
         reply = message.reply_to_message
         replied_user = reply.from_user
         if replied_user.is_self:
-            await message.edit("Anda tidak bisa menolak dirimu sendiri.")
+            await message.edit("You can't deny yourself.")
             return
         aname = replied_user.id
         name0 = str(replied_user.first_name)
@@ -185,7 +185,7 @@ async def disapprovepm(client: Client, message: Message):
         aname = message.chat
         if not aname.type == enums.ChatType.PRIVATE:
             await message.edit(
-                "Saat ini Anda tidak sedang dalam PM dan Anda belum membalas pesan seseorang."
+                "You're not currently in PM and you haven't replied to someone's message."
             )
             return
         name0 = aname.first_name
@@ -194,7 +194,7 @@ async def disapprovepm(client: Client, message: Message):
     dissprove(uid)
 
     await message.edit(
-        f"**Pesan** [{name0}](tg://user?id={uid}) **Telah Ditolak, Mohon Jangan Melakukan Spam Chat!**"
+        f"**Message** [{name0}](tg://user?id={uid}) **Has been Rejected, Please Do Not Do It Spam Chat!**"
     )
 
 
@@ -202,7 +202,7 @@ async def disapprovepm(client: Client, message: Message):
 async def setpm_limit(client: Client, cust_msg: Message):
     if gvarstatus("PMPERMIT") and gvarstatus("PMPERMIT") == "false":
         return await cust_msg.edit(
-            f"**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `{cmd}setvar PM_AUTO_BAN True`"
+            f"**You Have To Set Var** `PM_AUTO_BAN` **When** `True`\n\n**If you want to activate PMPERMIT Please Type:** `{cmd}setvar PM_AUTO_BAN True`"
         )
     try:
         from X.helpers.SQL.globals import addgvar
@@ -218,10 +218,10 @@ async def setpm_limit(client: Client, cust_msg: Message):
         else None
     )
     if not input_str:
-        return await cust_msg.edit("**Harap masukan angka untuk PM_LIMIT.**")
+        return await cust_msg.edit("**Please enter a number for PM_LIMIT.**")
     X = await cust_msg.edit("`Processing...`")
     if input_str and not input_str.isnumeric():
-        return await X.edit("**Harap masukan angka untuk PM_LIMIT.**")
+        return await X.edit("**Please enter a number for PM_LIMIT.**")
     addgvar("PM_LIMIT", input_str)
     await X.edit(f"**Set PM limit to** `{input_str}`")
 
@@ -239,15 +239,15 @@ async def onoff_pmpermit(client: Client, message: Message):
         PMPERMIT = True
     if PMPERMIT:
         if h_type:
-            await edit_or_reply(message, "**PMPERMIT Sudah Diaktifkan**")
+            await edit_or_reply(message, "**PMPERMIT Already Activated**")
         else:
             addgvar("PMPERMIT", h_type)
-            await edit_or_reply(message, "**PMPERMIT Berhasil Dimatikan**")
+            await edit_or_reply(message, "**PMPERMIT Shutdown Successfully**")
     elif h_type:
         addgvar("PMPERMIT", h_type)
-        await edit_or_reply(message, "**PMPERMIT Berhasil Diaktifkan**")
+        await edit_or_reply(message, "**PMPERMIT Activated Successfully**")
     else:
-        await edit_or_reply(message, "**PMPERMIT Sudah Dimatikan**")
+        await edit_or_reply(message, "**PMPERMIT It's Turned Off**")
 
 
 @Client.on_message(filters.command("setpmpermit", cmd) & filters.me)
@@ -255,7 +255,7 @@ async def stpmpt(client: Client, cust_msg: Message):
     """Set your own Unapproved message"""
     if gvarstatus("PMPERMIT") and gvarstatus("PMPERMIT") == "false":
         return await cust_msg.edit(
-            "**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `.setvar PM_AUTO_BAN True`"
+            "**You Have To Tune In Var** `PM_AUTO_BAN` **When** `True`\n\n**If you want to activate PMPERMIT Please Type:** `.setvar PM_AUTO_BAN True`"
         )
     try:
         import X.helpers.SQL.globals as sql
@@ -268,17 +268,17 @@ async def stpmpt(client: Client, cust_msg: Message):
     if custom_message is not None:
         sql.delgvar("unapproved_msg")
     if not message:
-        return await X.edit("**Mohon Reply Ke Pesan**")
+        return await X.edit("**Please reply to the message**")
     msg = message.text
     sql.addgvar("unapproved_msg", msg)
-    await X.edit("**Pesan Berhasil Disimpan Ke Room Chat**")
+    await X.edit("**Message Successfully Saved to Chat Roomt**")
 
 
 @Client.on_message(filters.command("getpmpermit", cmd) & filters.me)
 async def gtpmprmt(client: Client, cust_msg: Message):
     if gvarstatus("PMPERMIT") and gvarstatus("PMPERMIT") == "false":
         return await cust_msg.edit(
-            "**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `.setvar PM_AUTO_BAN True`"
+            "**You Have To Tune In Var** `PM_AUTO_BAN` **When** `True`\n\n**If you want to activate PMPERMIT Please Type:** `.setvar PM_AUTO_BAN True`"
         )
     try:
         import X.helpers.SQL.globals as sql
@@ -288,11 +288,11 @@ async def gtpmprmt(client: Client, cust_msg: Message):
     X = await cust_msg.edit("`Processing...`")
     custom_message = sql.gvarstatus("unapproved_msg")
     if custom_message is not None:
-        await X.edit("**Pesan PMPERMIT Yang Sekarang:**" f"\n\n{custom_message}")
+        await X.edit("**Order PMPERMIT Now:**" f"\n\n{custom_message}")
     else:
         await X.edit(
-            "**Anda Belum Menyetel Pesan Costum PMPERMIT,**\n"
-            f"**Masih Menggunakan Pesan PM Default:**\n\n{DEF_UNAPPROVED_MSG}"
+            "**You Have Not Set PMPERMIT Custom Message,**\n"
+            f"**Still Using Default PM Message:**\n\n{DEF_UNAPPROVED_MSG}"
         )
 
 
@@ -300,7 +300,7 @@ async def gtpmprmt(client: Client, cust_msg: Message):
 async def gtpmprmt(client: Client, cust_msg: Message):
     if gvarstatus("PMPERMIT") and gvarstatus("PMPERMIT") == "false":
         return await cust_msg.edit(
-            f"**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `{cmd}setvar PM_AUTO_BAN True`"
+            f"**You Have To Tune In Var** `PM_AUTO_BAN` **when** `True`\n\n**If you want to activate PMPERMIT, please type:** `{cmd}setvar PM_AUTO_BAN True`"
         )
     try:
         import X.helpers.SQL.globals as sql
@@ -311,10 +311,10 @@ async def gtpmprmt(client: Client, cust_msg: Message):
     custom_message = sql.gvarstatus("unapproved_msg")
 
     if custom_message is None:
-        await X.edit("**Pesan PMPERMIT Anda Sudah Default**")
+        await X.edit("**Your PMPERMIT message is already default**")
     else:
         sql.delgvar("unapproved_msg")
-        await X.edit("**Berhasil Mengubah Pesan Custom PMPERMIT menjadi Default**")
+        await X.edit("**Successfully Changed PMPERMIT Custom Message to Default**")
 
 
 add_command_help(
