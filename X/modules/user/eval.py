@@ -6,7 +6,7 @@ from config import CMD_HANDLER as cmd
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from X.helpers.basic import edit_or_reply
-import config
+import config import OWNER_ID
 
 async def aexec(code, client: Client, message: Message):
     exec(
@@ -17,7 +17,7 @@ async def aexec(code, client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("eval", ["."]) & filters.user(config.OWNER_ID) & ~filters.via_bot
+    filters.command("eval", ["."]) & filters.user(int(OWNER_ID)) & ~filters.via_bot
 )
 @Client.on_message(filters.command("call", cmd) & filters.me)
 async def executor(client: Client, message: Message):
