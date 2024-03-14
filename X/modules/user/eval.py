@@ -6,7 +6,7 @@ from config import CMD_HANDLER as cmd
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from X.helpers.basic import edit_or_reply
-from config import OWNER_ID
+import config
 
 async def aexec(code, client: Client, message: Message):
     exec(
