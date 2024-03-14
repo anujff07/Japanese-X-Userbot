@@ -53,4 +53,4 @@
     ─「 𝑪𝒓𝒆𝒅𝒊𝒕 」─
 </h3>
 
-- <b>[𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](https://github.com/nobitaaxd)
+- <b>[𝐍𝐎𝐁𝐈𝐓𝐀_𝐗𝐃](https://github.com/nobitaaxd) & [𝐌𝐈𝐑𝐙𝐀](https://github.com/MirzaElite)
