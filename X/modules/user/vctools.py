@@ -1,12 +1,3 @@
-# Credits: @mrismanaziz
-# Copyright (C) 2022 Pyro-ManUserbot
-#
-# This file is a part of < https://github.com/mrismanaziz/PyroMan-Userbot/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
-#
-# t.me/SharingUserbot & t.me/Lunatic0de
-
 from asyncio import sleep
 from contextlib import suppress
 from random import randint
