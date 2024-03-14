@@ -17,7 +17,25 @@
 
 <p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/Japanese-Userbots/Japanese-X-Userbot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
+## 𝑽𝑷𝑺/𝑳𝒐𝒄𝒂𝒍𝒍𝒚 𝒅𝒆𝒑𝒍𝒐𝒚
 
+```console
+X@Debian~ $ apt-get -y update
+X@Debian~ $ apt-get -y install git gcc python3-pip -y
+X@Debian~ $ git clone https://github.com/Japanese-Userbots/Japanese-X-Userbot
+X@Debian~ $ cd Japanese-X-Userbot
+X@Debian~ $ pip3 install -U -r requirements.txt
+X@Debian~ $ cp sample.env .env
+X@Debian~ $ nano .env
+```
+
+<h3 align="center">
+ᴇᴅɪᴛ .ᴇɴᴠ ᴡɪᴛʜ ʏᴏᴜʀ ᴏᴡɴ ᴠᴀʟᴜᴇꜱ ᴀɴᴅ ʀᴜɴ ʙᴏᴛ ✨
+</h3>
+
+```console
+X@Debian~ $ screen
+X@Debian~ $ python3 -m X
 
 # 𝑫𝑰𝑺𝑪𝑳𝑨𝑰𝑴𝑬𝑹
 
