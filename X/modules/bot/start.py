@@ -28,10 +28,8 @@ async def start(app, message):
     reply_markup = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("Support", url="https://t.me/Japanese_Userbot_Chat"),
-            InlineKeyboardButton("Channel", url="https://t.me/Japanese_Userbot"),]
-        [
-            InlineKeyboardButton("Owner", user_id=6694740726),
-            InlineKeyboardButton("Repo", url="https://github.com/Japanese-Userbots/Japanese-X-Userbot/")
+            InlineKeyboardButton("Channel", url="https://t.me/Japanese_Useebot"),
+            InlineKeyboardButton("Owner", url="https://t.me/Nobitaa_xd"),
         ],
     ])
 
