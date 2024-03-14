@@ -9,6 +9,10 @@
       "description": "gεт тнιs ғяσм вσтғαтнεя",
       "required": true
     },
+    "OWNER_ID": {
+      "description": "ᴘᴀsᴛᴇ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ ʜᴇʀᴇ",
+      "required": true
+    },
     "STRING_SESSION1": {
       "description": "ғιℓℓ үσυя ρүяσgяαм sтяιηg sεssιση",
       "required": true
