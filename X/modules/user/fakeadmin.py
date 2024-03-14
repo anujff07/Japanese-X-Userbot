@@ -59,7 +59,7 @@ async def giben(client: Client, message: Message):
     done = random.choice(nyet)
     msg = (
         r"**#GBanned**"
-        f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})"
+        f"\n\n**Name:** [{user.first_name}](tg://user?id={user.id})"
         f"\n**User ID:** `{user.id}`"
     )
     if reason:
@@ -93,7 +93,7 @@ async def gimut(client: Client, message: Message):
     done = random.choice(nyet)
     msg = (
         r"**#GMuted**"
-        f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})"
+        f"\n\n**Namae** [{user.first_name}](tg://user?id={user.id})"
         f"\n**User ID:** `{user.id}`"
     )
     if reason:
@@ -127,7 +127,7 @@ async def gikik(client: Client, message: Message):
     done = random.choice(nyet)
     msg = (
         r"**#GKicked**"
-        f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})"
+        f"\n\n**Name:** [{user.first_name}](tg://user?id={user.id})"
         f"\n**User ID:** `{user.id}`"
     )
     if reason:
