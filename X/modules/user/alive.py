@@ -31,20 +31,20 @@ emoji = gvarstatus("ALIVE_EMOJI") or "✵"
 alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "l am alive✨"
 
 
-@Client.on_message(filters.command(["alip", "awake"], cmd) & filters.me)
+@Client.on_message(filters.command(["alive", "awake"], cmd) & filters.me)
 async def alip(client: Client, message: Message):
-    X = await edit_or_reply(message, "🥶")
+    X = await edit_or_reply(message, "😝")
     await asyncio.sleep(2)
     sad = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
     man = (
         f"<b>{alive_text}</b>\n\n"
-        f"{emoji} <b>Mᴀsᴛᴇʀ :</b> {client.me.mention} \n"
-        f"{emoji} <b>Mᴏᴅᴜʟᴇs :</b> <code>{len(modules)} Modules</code> \n"
+        f"{emoji} <b>Mᴀsᴛᴇʀ:</b> {client.me.mention} \n"
+        f"{emoji} <b>Mᴏᴅᴜʟᴇs:</b> <code>{len(modules)} Modules</code> \n"
         f"{emoji} <b>Version:</b> <code>{BOT_VER}</code> \n"
-        f"{emoji} <b>Python versi:</b> <code>{python_version()}</code> \n"
-        f"{emoji} <b>Pyrogram versi :</b> <code>{versipyro}</code> \n"
-        f"{emoji} <b>Bot Uptime :</b> <code>{uptime}</code> \n\n"
+        f"{emoji} <b>Python version:</b> <code>{python_version()}</code> \n"
+        f"{emoji} <b>Pyrogram version:</b> <code>{versipyro}</code> \n"
+        f"{emoji} <b>Bot Uptime:</b> <code>{uptime}</code> \n\n"
         f"{emoji}**[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/Japanese_Userbot_Chat)** \n" 
         f"{emoji}**[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/Japanese_Userbot)** \n"
         f"{emoji}**[𝗢𝘄𝗻𝗲𝗿](tg://user?id=6694740726)** \n"
