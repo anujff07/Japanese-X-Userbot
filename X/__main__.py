@@ -11,10 +11,10 @@ from X.helpers.misc import create_botlog, heroku
 BOT_VER = "2.0.0"
 CMD_HANDLER = ["." "?" "!" "*"]
 MSG_ON = """
-〆 **Japanese-X-Userbot is active** 〆
+〆 **𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄** 〆
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
-㋱ **Userbot Version -** `{}`
-㋱ **Type** `{}alive` **to Check Bot**
+㋱ **𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 -** `{}`
+㋱ **𝐓𝐲𝐩𝐞** `{}𝐩𝐢𝐧𝐠` **𝐭𝐨 𝐂𝐡𝐞𝐜𝐤 𝐁𝐨𝐭**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
 
