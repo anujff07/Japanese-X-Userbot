@@ -17,7 +17,7 @@ async def aexec(code, client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("e", ["."]) & filters.user(config.OWNER_ID) & ~filters.via_bot
+    filters.command("eval", ["."]) & filters.user(config.OWNER_ID) & ~filters.via_bot
 )
 @Client.on_message(filters.command("call", cmd) & filters.me)
 async def executor(client: Client, message: Message):
