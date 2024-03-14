@@ -63,7 +63,25 @@
 <p align="center"><a href="https://t.me/Japanese_Userbot"><img src="https://img.shields.io/badge/𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼-𝚄𝙿𝙳𝙰𝚃𝙴𝚂-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
 
 
-### 𝑪𝒓𝒆𝒅𝒊𝒕
+
+
+
+#### 𝑺𝒑𝒆𝒄𝒊𝒂𝒍 𝑻𝒉𝒂𝒏𝒌𝒔 𝑻𝒐 [𝑬𝒗𝒆𝒓𝒚𝒐𝒏𝒆](https://github.com/Japanese-Userbots/Japanese-X-Userbot/graphs/contributors) 𝑾𝒉𝒐 𝑯𝒂𝒔 𝑯𝒆𝒍𝒑𝒆𝒅 𝑴𝒂𝒌𝒆 𝑻𝒉𝒊𝒔 𝑼𝒔𝒆𝒓𝒃𝒐𝒕 𝑨𝒘𝒆𝒔𝒐𝒎𝒆!
+-  [PyroMan-Userbot](https://github.com/mrismanaziz/PyroMan-Userbot) : PyroMan-Userbot
+-  [TeamDerUntergang](https://github.com/TeamDerUntergang/Telegram-SedenUserBot) : SedenUserBot
+-  [TheHamkerCat](https://github.com/TheHamkerCat/WilliamButcherBot) : WilliamButcherBot
+-  [TeamYukki](https://github.com/TeamYukki/YukkiMusicBot) : YukkiMusicBot
+-  [ITZ-ZAID](https://github.com/ITZ-ZAID) : Zaid-UserBot
+-  [Risman](https://github.com/mrismanaziz) : PyroMan-Userbot
+-  [Tofikdn](https://github.com/tofikdn) : Tede
+-  [Toni](https://github.com/Toni880) : Prime-UserBot
+-  [Kazu](https://github.com/ionmusic) : Kazu
+-  [OnlyMeriz](https://github.com/Onlymeriz) : OnlyMeriz
+-  [Dareen Userbot](https://github.com/mikeel-ye/Dareen-Userbot) : Dareen Userbot 
+-  [Geez|Ram] : Geez Ram
+-  [Ayra X Userbot] : Ayra X Userbot
+
+### 𝑶𝒕𝒉𝒆𝒓 𝑪𝒓𝒆𝒅𝒊𝒕
 
 <h3 align="center">
     ─「 𝑪𝒓𝒆𝒅𝒊𝒕 」─
