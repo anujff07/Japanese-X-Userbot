@@ -131,15 +131,15 @@ async def leavevc(client: Client, message: Message):
 add_command_help(
     "vctools",
     [
-        ["startvc", "To Start Os On Gc Ugly Lu."],
-        ["stopvc", "Untuk Memberhentikan Os Di Gc Jelek Lu."],
+        ["startvc", "To Start Voice Chat On Group."],
+        ["stopvc", "To Stop Voice Chat on Group."],
         [
-            f"joinvcs atau {cmd}joinvc <chatid/username gc>",
-            "Untuk Bergabung Di Os Gc Sampah.",
+            f"joinvcs or {cmd}joinvc <chatid/username gc>",
+            "To Join Voice Chat on Group.",
         ],
         [
-            f"leavevcs atau {cmd}leavevc <chatid/username gc>",
-            "Untuk Turun Dari Gc Sampah.",
+            f"leavevcs or {cmd}leavevc <chatid/username gc>",
+            "To Leave Voice Chat on Group.",
         ],
     ],
                                                          )
