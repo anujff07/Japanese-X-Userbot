@@ -13,10 +13,10 @@ class First:
 Powered by [Japanese-X-Userbot](https://github.com/Japanese-Userbots/Japanese-X-Userbot)"""
     CREATOR = 'I was created by my master <a href="https://github.com/Japanese-Userbots/Japanese-X-Userbot">Man</a> on a rainy day.'
     MSG_ON = """
-🐣 **Japanese-X-Userbot Activated Successfully** 🐣
+🐣 **𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲** 🐣
 ━━
-➠ **Userbot Version -** `{}`
-➠ **Type** `{}alive` **to check Bot**
+➠ **𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 -** `{}`
+➠ **𝐓𝐲𝐩𝐞** `{}𝐩𝐢𝐧𝐠` **𝐭𝐨 𝐜𝐡𝐞𝐜𝐤 𝐁𝐨𝐭**
 ━━
 """
 
