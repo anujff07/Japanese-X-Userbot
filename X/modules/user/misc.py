@@ -139,7 +139,7 @@ async def open_file(client: Client, m: Message):
 async def sosmed(client: Client, message: Message):
     Man = await message.edit("`Processing . . .`")
     link = get_arg(message)
-    bot = "thisvidbot"
+    bot = "instasavegrambot"
     if link:
         try:
             xnxx = await client.send_message(bot, link)
