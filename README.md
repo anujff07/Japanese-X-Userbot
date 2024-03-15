@@ -72,6 +72,7 @@
 -  [TheHamkerCat](https://github.com/TheHamkerCat/WilliamButcherBot) : WilliamButcherBot
 -  [Dareen Userbot](https://github.com/mikeel-ye/Dareen-Userbot) : Dareen Userbot
 -  [Ayra X Userbot](https://github.com/AyiinXd/Ayiin-Userbot) : Ayra X Userbot
+-  [King Userbot](https://github.com/apisuserbot/King-Userbot) : King Userbot
 -  [TeamYukki](https://github.com/TeamYukki/YukkiMusicBot) : YukkiMusicBot
 -  [ITZ-ZAID](https://github.com/ITZ-ZAID) : Zaid-UserBot
 -  [Risman](https://github.com/mrismanaziz) : PyroMan-Userbot
