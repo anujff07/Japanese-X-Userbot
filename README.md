@@ -70,18 +70,18 @@
 -  [PyroMan-Userbot](https://github.com/mrismanaziz/PyroMan-Userbot) : PyroMan-Userbot
 -  [TeamDerUntergang](https://github.com/TeamDerUntergang/Telegram-SedenUserBot) : SedenUserBot
 -  [TheHamkerCat](https://github.com/TheHamkerCat/WilliamButcherBot) : WilliamButcherBot
+-  [Dareen Userbot](https://github.com/mikeel-ye/Dareen-Userbot) : Dareen Userbot
+-  [Ayra X Userbot](https://github.com/AyiinXd/Ayiin-Userbot) : Ayra X Userbot
 -  [TeamYukki](https://github.com/TeamYukki/YukkiMusicBot) : YukkiMusicBot
 -  [ITZ-ZAID](https://github.com/ITZ-ZAID) : Zaid-UserBot
 -  [Risman](https://github.com/mrismanaziz) : PyroMan-Userbot
--  [Tofikdn](https://github.com/tofikdn) : Tede
--  [Toni](https://github.com/Toni880) : Prime-UserBot
--  [Kazu](https://github.com/ionmusic) : Kazu
 -  [OnlyMeriz](https://github.com/Onlymeriz) : OnlyMeriz
--  [Dareen Userbot](https://github.com/mikeel-ye/Dareen-Userbot) : Dareen Userbot 
+-  [Toni](https://github.com/Toni880) : Prime-UserBot
+-  [Tofikdn](https://github.com/tofikdn) : Tede
+-  [Kazu](https://github.com/ionmusic) : Kazu
 -  [Geez|Ram] : Geez Ram
--  [Ayra X Userbot] : Ayra X Userbot
 
-### 𝑶𝒕𝒉𝒆𝒓 𝑪𝒓𝒆𝒅𝒊𝒕
+### 𝑪𝒓𝒆𝒅𝒊𝒕
 
 <h3 align="center">
     ─「 𝑪𝒓𝒆𝒅𝒊𝒕 」─
