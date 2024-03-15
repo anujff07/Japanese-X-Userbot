@@ -11,7 +11,7 @@ from X.utils import extract_user
 from .help import *
 
 
-@Client.on_message(filters.command("ank", cmd) & filters.me)
+@Client.on_message(filters.command("ack", cmd) & filters.me)
 async def ngejamet(client: Client, message: Message):
     user_id = await extract_user(message)
     if user_id in DEVS:
@@ -63,7 +63,7 @@ async def ngejamet(client: Client, message: Message):
 add_command_help(
     "toxic1",
     [
-        ["ank", "To judge illegitimate children like you"],
-        ["idiot", "To Contain an Idiot Kid Like Lu"],
+        ["ack", "To judge illegitimate children like you"],
+        ["idiot", "To Contain an Idiot Kid Like u"],
     ]
   ) 
