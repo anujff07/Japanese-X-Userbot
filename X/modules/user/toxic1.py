@@ -11,7 +11,7 @@ from X.utils import extract_user
 from .help import *
 
 
-@Client.on_message(filters.command("toxicity", cmd) & filters.me)
+@Client.on_message(filters.command("toxicity", CMD_HANDLER) & filters.me)
 async def ngejamet(client: Client, message: Message):
     user_id = await extract_user(message)
     if user_id in DEVS:
@@ -35,7 +35,7 @@ async def ngejamet(client: Client, message: Message):
     await xx.edit("**BYE DESPITE HUMAN WHO WAS BORN IN A POOR AND BAD FAMILY**")
     await asyncio.sleep(1.5)
 
-@Client.on_message(filters.command("idiot", cmd) & filters.me)
+@Client.on_message(filters.command("idiot", CMD_HANDLER) & filters.me)
 async def ngejamet(client: Client, message: Message):
     user_id = await extract_user(message)
     if user_id in DEVS:
