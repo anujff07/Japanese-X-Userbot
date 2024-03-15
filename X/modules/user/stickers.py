@@ -68,7 +68,7 @@ async def kang(client: Client, message: Message):
                 resize = True
                 ff_vid = True
         else:
-            await X.edit("**File Tidak Didukung**")
+            await X.edit("**File Not supported**")
             return
         media_ = await client.download_media(replied, file_name="X/resources/")
     else:
