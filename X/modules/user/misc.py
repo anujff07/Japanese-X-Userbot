@@ -137,7 +137,7 @@ async def open_file(client: Client, m: Message):
 
 @Client.on_message(filters.command(["tt", "tiktok", "ig", "sosmed"], cmd) & filters.me)
 async def sosmed(client: Client, message: Message):
-    Man = await message.edit("`Processing . . .`")
+    Man = await message.edit("`Processing Please Wait My Master✨ Give me only 5-10 Seconds Done Now Go to @instasavegrambot. . .`")
     link = get_arg(message)
     bot = "instasavegrambot"
     if link:
