@@ -51,6 +51,6 @@ async def executor(client: Client, message: Message):
     elif stdout:
         evaluation = stdout
     else:
-        evaluation = "Success"
-    final_output = f"**OUTPUT**:\n```{evaluation.strip()}```"
+        evaluation = "𝚂𝚄𝙲𝙲𝙴𝚂𝚂"
+    final_output = f"**𝙾𝚄𝚃𝙿𝚄𝚃**:\n```{evaluation.strip()}```"
     await edit_or_reply(message, final_output) 
