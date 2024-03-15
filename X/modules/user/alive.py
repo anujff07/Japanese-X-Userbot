@@ -39,15 +39,15 @@ async def alip(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     man = (
         f"<b>{alive_text}</b>\n\n"
-        f"{emoji} <b>𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁:</b> {client.me.mention} \n"
-        f"{emoji} <b>𝙼𝙾𝙳𝚄𝙻𝙴𝚂:</b> <code>{len(modules)} Modules</code> \n"
-        f"{emoji} <b>𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{BOT_VER}</code> \n"
-        f"{emoji} <b>𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{python_version()}</code> \n"
-        f"{emoji} <b>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{versipyro}</code> \n"
-        f"{emoji} <b>𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴:</b> <code>{uptime}</code> \n\n"
-        f"{emoji}✧[𝙶𝚁𝙾𝚄𝙿](https://t.me/Japanese_Userbot_Chat)** \n" 
-        f"{emoji}✧[𝙲𝙷𝙰𝙽𝙽𝙴𝙻](https://t.me/Japanese_Userbot)** \n"
-        f"{emoji}✧[𝙾𝚆𝙽𝙴𝚁](tg://user?id=6694740726)** \n"
+        f"{✧} <b>𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁:</b> {client.me.mention} \n"
+        f"{✧} <b>𝙼𝙾𝙳𝚄𝙻𝙴𝚂:</b> <code>{len(modules)} Modules</code> \n"
+        f"{✧} <b>𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{BOT_VER}</code> \n"
+        f"{✧} <b>𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{python_version()}</code> \n"
+        f"{✧} <b>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{versipyro}</code> \n"
+        f"{✧} <b>𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴:</b> <code>{uptime}</code> \n\n"
+        f"{✧}✧[𝙶𝚁𝙾𝚄𝙿](https://t.me/Japanese_Userbot_Chat)** \n" 
+        f"{✧}✧[𝙲𝙷𝙰𝙽𝙽𝙴𝙻](https://t.me/Japanese_Userbot)** \n"
+        f"{✧}✧[𝙾𝚆𝙽𝙴𝚁](tg://user?id=6694740726)** \n"
     )
     try:
       await sad(
