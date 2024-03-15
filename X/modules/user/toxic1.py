@@ -35,7 +35,7 @@ async def ngejamet(client: Client, message: Message):
     await xx.edit("**BYE DESPITE HUMAN WHO WAS BORN IN A POOR AND BAD FAMILY**")
     await asyncio.sleep(1.5)
 
-@Client.on_message(filters.command("idiot", cmd) & filters.me)
+@Client.on_message(filters.command("ank", cmd) & filters.me)
 async def ngejamet(client: Client, message: Message):
     user_id = await extract_user(message)
     if user_id in DEVS:
@@ -64,6 +64,6 @@ add_command_help(
     "toxic1",
     [
         ["ack", "To judge illegitimate children like you"],
-        ["idiot", "To Contain an Idiot Kid Like u"],
+        ["ank", "To Contain an Idiot Kid Like u"],
     ]
   ) 
