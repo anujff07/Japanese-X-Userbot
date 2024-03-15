@@ -81,7 +81,7 @@ async def set_bio(client: Client, message: Message):
         return await X.edit("Provide text to set as bio.")
 
 
-@Client.on_message(filters.me & filters.command(["setpfp"], cmd))
+@Client.on_message(filters.command("setpfp", cmd) & filters.me)
 async def set_pfp(client: Client, message: Message):
     replied = message.reply_to_message
     if (
