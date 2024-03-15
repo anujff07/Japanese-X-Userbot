@@ -69,7 +69,9 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"**█▀█ █▀█ █▄░█ █▀▀ █ \n█▀▀ █▄█ █░▀█ █▄█ ▄**\n\n✥ **✪ Tɪᴍᴇ Tᴀᴋᴇɴ:** `{ms}` ms \n✥ **✪ Mᴀsᴛᴇʀ:** `{ALIVE_NAME}` \n✥ **✪ Assɪsᴛᴀɴᴛ:** __@{TG_BOT_USER_NAME}__"
+        f"❏ **ᴘɪɴɢ ᴘᴏɴɢ !!**\n"
+        f"**├• ** `%sms`\n"
+        f"╰•** Mᴀsᴛᴇʀ :** {client.me.mention}" % (duration)
     )
 
 
