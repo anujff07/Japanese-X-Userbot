@@ -137,9 +137,9 @@ async def open_file(client: Client, m: Message):
 
 @Client.on_message(filters.command(["tt", "tiktok", "ig", "sosmed"], cmd) & filters.me)
 async def sosmed(client: Client, message: Message):
-    Man = await message.edit("`Processing Please Wait My Master✨ Give me only 5-10 Seconds Done Now Go to @instasavegrambot. . .`")
+    Man = await message.edit("`Processing Please Wait My Master✨ Give me only 5-10 Seconds Done Now Go to @MultiSaverXbot . . .`")
     link = get_arg(message)
-    bot = "instasavegrambot"
+    bot = "MultiSaverXbot"
     if link:
         try:
             xnxx = await client.send_message(bot, link)
