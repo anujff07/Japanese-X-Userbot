@@ -28,7 +28,7 @@ alive_logo = (
     gvarstatus("ALIVE_LOGO") or ""
 )
 emoji = gvarstatus("ALIVE_EMOJI") or "✵"
-alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "l am alive✨"
+alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "✧✧ 𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 ✧✧✨"
 
 
 @Client.on_message(filters.command(["alive", "awake"], cmd) & filters.me)
