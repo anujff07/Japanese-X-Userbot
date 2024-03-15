@@ -22,7 +22,7 @@ Mʏ Mᴀsᴛᴇʀ {message.from_user.mention} ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ 
 "
 Mʏ Mᴀsᴛᴇʀ ʜᴀs ᴀssɪɢɴᴇᴅ ᴍᴇ ᴛʜᴇ ᴅᴜᴛʏ ᴛᴏ ᴋᴇᴇᴘ ᴀ ᴄʜᴇᴄᴋ ᴏɴ ʜɪs PM, Aɴᴅ ɪ'ʟʟ ᴅᴏ ɪᴛ ғᴀɪᴛʜғᴜʟʟʏ..Sᴏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴅɪsᴛᴜʀʙ ʜɪᴍ..
 Iғ ᴜ Sᴘᴀᴍ, ᴏʀ ᴛʀɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ғᴜɴɴʏ, I'ᴠᴇ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ Bʟᴏᴄᴋ + Rᴇᴘᴏʀᴛ ʏᴏᴜ ᴀs Sᴘᴀᴍ ɪɴ Tᴇʟᴇɢʀᴀᴍ's sᴇʀᴠᴇʀ...
-Bᴇᴛᴛᴇʀ ʙᴇ ᴄᴀʀᴇғᴜʟ""";
+Bᴇᴛᴛᴇʀ ʙᴇ ᴄᴀʀᴇғᴜʟ"""
 
 x=await message.reply_text(message.from_user.mention) 
 y=await message.reply_text(app.me.mention)
