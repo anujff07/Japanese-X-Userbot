@@ -25,6 +25,14 @@ Iғ ᴜ Sᴘᴀᴍ, ᴏʀ ᴛʀɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ғᴜɴɴʏ, I'ᴠᴇ
 Bᴇᴛᴛᴇʀ ʙᴇ ᴄᴀʀᴇғᴜʟ..
 Cʜᴏᴏsᴇ ᴀɴʏ Rᴇᴀsᴏɴ & GTFO**""";
 
+x=await message.reply_text(message.from_user.mention) 
+y=await message.reply_text(app.me.mention)
+await app.send_message(
+    message.chat.id, caption,
+    reply_markup=InlineKeyboardMarkup(
+        [
+                     [InlineKeyboardButton("Owner", user_id="config.OWNER_ID"), InlineKeyboardButton("Support", url="https://t.me/Japanese_Userbot_Chat")],
+            [InlineKeyboardButton("Channel", url="https://t.me/Japanese_Userbot")]]))
 
 @Client.on_message(
     ~filters.me & filters.private & ~filters.bot & filters.incoming, group=69
