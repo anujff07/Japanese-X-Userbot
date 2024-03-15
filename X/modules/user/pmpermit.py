@@ -24,8 +24,8 @@ Mʏ Mᴀsᴛᴇʀ ʜᴀs ᴀssɪɢɴᴇᴅ ᴍᴇ ᴛʜᴇ ᴅᴜᴛʏ ᴛᴏ �
 Iғ ᴜ Sᴘᴀᴍ, ᴏʀ ᴛʀɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ғᴜɴɴʏ, I'ᴠᴇ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ Bʟᴏᴄᴋ + Rᴇᴘᴏʀᴛ ʏᴏᴜ ᴀs Sᴘᴀᴍ ɪɴ Tᴇʟᴇɢʀᴀᴍ's sᴇʀᴠᴇʀ...
 Bᴇᴛᴛᴇʀ ʙᴇ ᴄᴀʀᴇғᴜʟ"""
 
-x=await message.reply_text(message.from_user.mention) 
-y=await message.reply_text(app.me.mention)
+X=await message.reply_text(message.from_user.mention) 
+X=await message.reply_text(app.me.mention)
 await app.send_message(
     message.chat.id, caption,
     reply_markup=InlineKeyboardMarkup(
