@@ -12,6 +12,7 @@ from X.helpers.SQL.globals import addgvar, gvarstatus
 from X.helpers.tools import get_arg
 
 from .help import *
+from X import app
 
 DEF_UNAPPROVED_MSG = (
  "❏ ᴘᴍ sᴇᴄᴜʀɪᴛʏ ᴏғ  ˹Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ˼ !\n"
