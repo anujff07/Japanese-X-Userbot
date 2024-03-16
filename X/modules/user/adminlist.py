@@ -28,11 +28,11 @@ async def adminlist(client: Client, message: Message):
         message.chat.id, filter=enums.ChatMembersFilter.ADMINISTRATORS
     ):
         try:
-            nama = a.user.first_name + " " + a.user.last_name
+            name = a.user.first_name + " " + a.user.last_name
         except:
-            nama = a.user.first_name
+            name = a.user.first_name
         if nama is None:
-            nama = "☠️ Deleted account"
+            name = "☠️ 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭"
         if a.status == enums.ChatMemberStatus.ADMINISTRATOR:
             if a.user.is_bot:
                 badmin.append(mention_markdown(a.user.id, nama))
