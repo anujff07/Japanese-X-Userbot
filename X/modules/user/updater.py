@@ -68,7 +68,7 @@ async def updateme_requirements():
 )
 @Client.on_message(filters.command("update", cmd) & filters.me)
 async def upstream(client: Client, message: Message):
-    status = await edit_or_reply(message, "`Checking for Updates, Wait a Moment...`")
+    status = await edit_or_reply(message, "`Checking for Updates, Wait a Moment Master...`")
     conf = get_arg(message)
     off_repo = UPSTREAM_REPO_URL
     try:
@@ -133,7 +133,7 @@ async def upstream(client: Client, message: Message):
                 )
         else:
             await status.edit(
-                f"\n`Your BOT is`  **up-to-date**  `with branch`  **[{ac_br}]**\n",
+                f"\n`Your BOT is`  **up-to-date**  `with branch master`  **[{ac_br}]**\n",
                 disable_web_page_preview=True,
             )
             repo.__del__()
@@ -187,7 +187,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`X-Pyrobot Updated Successfully! Userbot can be used again.`",
+            "`Japanese X Userbot Updated Successfully! Userbot can be used again.`",
         )
         args = [sys.executable, "-m", "X"]
         execle(sys.executable, *args, environ)
