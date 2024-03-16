@@ -12,7 +12,6 @@ absen = [
     "**Be there, please** 😁",
     "**Present handsome** 🥵",
     "**Present bro** 😎",
-    "**Sok2²an Absen Si Kontoolll**"
     "**Absence later**"
     "**I'm here, sorry I'm late** 🥺",
 ]
