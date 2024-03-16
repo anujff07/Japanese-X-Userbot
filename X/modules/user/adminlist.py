@@ -172,11 +172,11 @@ async def get_list_bots(client: Client, message: Message):
     bots = []
     async for a in getbots:
         try:
-            nama = a.user.first_name + " " + a.user.last_name
+            name = a.user.first_name + " " + a.user.last_name
         except:
-            nama = a.user.first_name
-        if nama is None:
-            nama = "☠️ 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭"
+            name = a.user.first_name
+        if name is None:
+            name = "☠️ 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭"
         if a.user.is_bot:
             bots.append(mention_markdown(a.user.id, nama))
     teks = "**𝐀𝐥𝐥 𝐛𝐨𝐭𝐬 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩 {}**\n".format(grup.title)
