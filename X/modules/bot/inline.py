@@ -58,7 +58,7 @@ async def alive_function(message: Message, answers):
 <b> • 𝙼𝙾𝙳𝚄𝙻𝙴𝚂 :</b> <code>{len(CMD_HELP)} Modules</code>
 <b> • 𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{pyver.split()[0]}</code>
 <b> • 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 :</b> <code>{pyrover}</code>
-<b> • Bot Uptime :</b> <code>{uptime}</code>
+<b> • 𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴 :</b> <code>{uptime}</code>
 
 <b> — 𝙱𝙾𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.0</b>
 """
