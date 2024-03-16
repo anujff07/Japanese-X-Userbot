@@ -118,7 +118,7 @@ async def report_admin(client: Client, message: Message):
         if text:
             teks = "{}".format(html.escape(text))
         else:
-            teks = "Calling admins in {}.".format(grup.title)
+            teks = "𝐂𝐚𝐥𝐥𝐢𝐧𝐠 𝐚𝐝𝐦𝐢𝐧𝐬 𝐢𝐧 {}.".format(grup.title)
     teks += "".join(admin)
     if message.reply_to_message:
         await client.send_message(
