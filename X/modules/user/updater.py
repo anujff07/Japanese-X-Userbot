@@ -178,7 +178,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`X-Pyrobot Updated Successfully! Userbot can be used again.`"
+            "`Japanese X Userbot Updated Successfully! Userbot can be used again.`"
         )
     else:
         try:
