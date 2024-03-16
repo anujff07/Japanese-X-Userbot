@@ -21,10 +21,10 @@ MSG_ON = """
 
 async def main():
     await app.start()
-    print("LOG: Founded Bot token Booting..")
+    print("𝐋𝐎𝐆: 𝐅𝐨𝐮𝐧𝐝𝐞𝐝 𝐁𝐨𝐭 𝐭𝐨𝐤𝐞𝐧 𝐁𝐨𝐨𝐭𝐢𝐧𝐠..")
     for all_module in ALL_MODULES:
         importlib.import_module("X.modules" + all_module)
-        print(f"Successfully Imported {all_module} ")
+        print(f"𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐈𝐦𝐩𝐨𝐫𝐭𝐞𝐝 {all_module} ")
     for bot in bots:
         try:
             await bot.start()
@@ -34,7 +34,7 @@ async def main():
                 await bot.send_message(BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER))
             except BaseException:
                 pass
-            print(f"Started as {ex.first_name} | {ex.id} ")
+            print(f"𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐚𝐬 {ex.first_name} | {ex.id} ")
             ids.append(ex.id)
         except Exception as e:
             print(f"{e}")
@@ -45,7 +45,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("X").info("Japanese-X-Userbot is Active, Dick🐣")
+    LOGGER("X").info("𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐬 𝐀𝐜𝐭𝐢𝐯𝐞✨")
     install()
     heroku()
     LOOP.run_until_complete(main())
