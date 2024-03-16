@@ -81,7 +81,7 @@ async def kickdel_cmd(client: Client, message: Message):
         for member in await message.chat.get_members()
         if member.user.is_deleted
     ]
-    await Man.edit(f"<b>Successfully kicked {len(values)} deleted account(s)</b>")
+    await Man.edit(f"<b>𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐤𝐢𝐜𝐤𝐞𝐝 {len(values)} 𝐝𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭(s)</b>")
 
 
 @Client.on_message(
