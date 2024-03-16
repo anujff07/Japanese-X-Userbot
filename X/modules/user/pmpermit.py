@@ -1,8 +1,6 @@
 from pyrogram import Client, enums, filters
 from pyrogram.types import Message
 from sqlalchemy.exc import IntegrityError
-from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup 
-from pyrogram import filters
 
 from config import CMD_HANDLER
 from X import TEMP_SETTINGS
@@ -12,26 +10,14 @@ from X.helpers.SQL.globals import addgvar, gvarstatus
 from X.helpers.tools import get_arg
 
 from .help import *
-from X import app
 
 DEF_UNAPPROVED_MSG = (
- f"""Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ, ғᴏʀ {message.from_user.mention} Pʀᴏᴛᴇᴄᴛɪᴏɴ 
-Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ {message.from_user.mention} ..
-Dᴏɴ'ᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ 😈😈
-Mʏ Mᴀsᴛᴇʀ {message.from_user.mention} ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ !! 
-"
-Mʏ Mᴀsᴛᴇʀ ʜᴀs ᴀssɪɢɴᴇᴅ ᴍᴇ ᴛʜᴇ ᴅᴜᴛʏ ᴛᴏ ᴋᴇᴇᴘ ᴀ ᴄʜᴇᴄᴋ ᴏɴ ʜɪs PM, Aɴᴅ ɪ'ʟʟ ᴅᴏ ɪᴛ ғᴀɪᴛʜғᴜʟʟʏ..Sᴏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴅɪsᴛᴜʀʙ ʜɪᴍ..
-Iғ ᴜ Sᴘᴀᴍ, ᴏʀ ᴛʀɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ғᴜɴɴʏ, I'ᴠᴇ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ Bʟᴏᴄᴋ + Rᴇᴘᴏʀᴛ ʏᴏᴜ ᴀs Sᴘᴀᴍ ɪɴ Tᴇʟᴇɢʀᴀᴍ's sᴇʀᴠᴇʀ...
-Bᴇᴛᴛᴇʀ ʙᴇ ᴄᴀʀᴇғᴜʟ"""
+ "❏ ᴘᴍ sᴇᴄᴜʀɪᴛʏ ᴏғ  ˹Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ˼ !\n"
+"├ Mᴏsᴛ Pᴏᴡᴇʀғᴜʟ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇ Tᴇʟᴇɢʀᴀᴍ Usᴇʀʙᴏᴛ\n"
+"├ Mʏ Mᴀsᴛᴇʀ ɪs Bᴜsʏ ʀɪɢʜᴛ ɴᴀᴍᴇ sᴏ Dᴏɴ'ᴛ sᴘᴀᴍ ᴘʟᴇᴀsᴇ ᴏᴛʜᴇʀᴡɪsᴇ I ᴡɪʟʟ ʙʟᴏᴄᴋ ʏᴏᴜ\n"
+"╰ Pᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ\n"
+)
 
-X=await message.reply_text(message.from_user.mention) 
-X=await message.reply_text(app.me.mention)
-await app.send_message(
-    message.chat.id, caption,
-    reply_markup=InlineKeyboardMarkup(
-        [
-                     [InlineKeyboardButton("Owner", user_id="config.OWNER_ID"), InlineKeyboardButton("Support", url="https://t.me/Japanese_Userbot_Chat")],
-            [InlineKeyboardButton("Channel", url="https://t.me/Japanese_Userbot")]]))
 
 @Client.on_message(
     ~filters.me & filters.private & ~filters.bot & filters.incoming, group=69
