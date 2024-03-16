@@ -24,7 +24,7 @@ alive_logo = random.choice(logoX)
 async def start(app, message):
     chat_id = message.chat.id
     file_id = alive_logo
-    caption = "Hi, I am Asisstant Japanese-X-Userbot\n What bro? If you want to be angry, you really have a tattoo?."
+    caption = "𝐇𝐢, 𝐈 𝐚𝐦 𝐀𝐬𝐢𝐬𝐬𝐭𝐚𝐧𝐭 𝐉𝐚𝐩𝐚𝐧𝐞𝐬𝐞-𝐗-𝐔𝐬𝐞𝐫𝐛𝐨𝐭\n 𝐖𝐡𝐚𝐭 𝐛𝐫𝐨? 𝐈𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐛𝐞 𝐚𝐧𝐠𝐫𝐲, 𝐲𝐨𝐮 𝐫𝐞𝐚𝐥𝐥𝐲 𝐡𝐚𝐯𝐞 𝐚 𝐭𝐚𝐭𝐭𝐨𝐨?."
     reply_markup = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("Support", url="https://t.me/Japanese_Userbot_Chat"),
