@@ -11,12 +11,15 @@ from X.helpers.tools import get_arg
 
 from .help import *
 
-DEF_UNAPPROVED_MSG = (
- "❏ ᴘᴍ sᴇᴄᴜʀɪᴛʏ ᴏғ  ˹Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ˼ !\n"
-"├ Mᴏsᴛ Pᴏᴡᴇʀғᴜʟ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇ Tᴇʟᴇɢʀᴀᴍ Usᴇʀʙᴏᴛ\n"
-"├ Mʏ Mᴀsᴛᴇʀ ɪs Bᴜsʏ ʀɪɢʜᴛ ɴᴀᴍᴇ sᴏ Dᴏɴ'ᴛ sᴘᴀᴍ ᴘʟᴇᴀsᴇ ᴏᴛʜᴇʀᴡɪsᴇ I ᴡɪʟʟ ʙʟᴏᴄᴋ ʏᴏᴜ\n"
-"╰ Pᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ\n"
-)
+DEF_UNAPPROVED_MSG=f"""Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ, ғᴏʀ {message.from_user.mention} Pʀᴏᴛᴇᴄᴛɪᴏɴ 
+Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ {message.from_user.mention} ..
+Dᴏɴ'ᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ 😈😈
+Mʏ Mᴀsᴛᴇʀ {message.from_user.mention} ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ !! 
+"
+Mʏ Mᴀsᴛᴇʀ ʜᴀs ᴀssɪɢɴᴇᴅ ᴍᴇ ᴛʜᴇ ᴅᴜᴛʏ ᴛᴏ ᴋᴇᴇᴘ ᴀ ᴄʜᴇᴄᴋ ᴏɴ ʜɪs PM, Aɴᴅ ɪ'ʟʟ ᴅᴏ ɪᴛ ғᴀɪᴛʜғᴜʟʟʏ..Sᴏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴅɪsᴛᴜʀʙ ʜɪᴍ..
+Iғ ᴜ Sᴘᴀᴍ, ᴏʀ ᴛʀɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ғᴜɴɴʏ, I'ᴠᴇ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ Bʟᴏᴄᴋ + Rᴇᴘᴏʀᴛ ʏᴏᴜ ᴀs Sᴘᴀᴍ ɪɴ Tᴇʟᴇɢʀᴀᴍ's sᴇʀᴠᴇʀ...
+Bᴇᴛᴛᴇʀ ʙᴇ ᴄᴀʀᴇғᴜʟ..
+Cʜᴏᴏsᴇ ᴀɴʏ Rᴇᴀsᴏɴ & GTFO**""";
 
 
 @Client.on_message(
@@ -54,10 +57,16 @@ async def incomingpm(client: Client, message: Message):
                     ):
                         await message.delete()
                     if TEMP_SETTINGS["PM_COUNT"][message.chat.id] < (int(PM_LIMIT) - 1):
-                        ret = await message.reply_text(UNAPPROVED_MSG)
+                        ret = await message.reply_text(UNAPPROVED_MSG,  reply_markup=InlineKeyboardMarkup(
+        [
+                     [InlineKeyboardButton("Owner", user_id="6694740726"), InlineKeyboardButton("Support", url="https://t.me/Japanese_Userbot_Chat")],
+            [InlineKeyboardButton("Channel", url="https://t.me/Japanese_Userbot")]]))
                         TEMP_SETTINGS["PM_LAST_MSG"][message.chat.id] = ret.text
             else:
-                ret = await message.reply_text(UNAPPROVED_MSG)
+                        ret = await message.reply_text(UNAPPROVED_MSG,  reply_markup=InlineKeyboardMarkup(
+        [
+                     [InlineKeyboardButton("Owner", user_id="6694740726"), InlineKeyboardButton("Support", url="https://t.me/Japanese_Userbot_Chat")],
+            [InlineKeyboardButton("Channel", url="https://t.me/Japanese_Userbot")]]))
                 if ret.text:
                     TEMP_SETTINGS["PM_LAST_MSG"][message.chat.id] = ret.text
             if message.chat.id not in TEMP_SETTINGS["PM_COUNT"]:
