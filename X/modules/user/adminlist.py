@@ -35,11 +35,11 @@ async def adminlist(client: Client, message: Message):
             name = "☠️ 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭"
         if a.status == enums.ChatMemberStatus.ADMINISTRATOR:
             if a.user.is_bot:
-                badmin.append(mention_markdown(a.user.id, nama))
+                badmin.append(mention_markdown(a.user.id, name))
             else:
-                admin.append(mention_markdown(a.user.id, nama))
+                admin.append(mention_markdown(a.user.id, name))
         elif a.status == enums.ChatMemberStatus.OWNER:
-            creator.append(mention_markdown(a.user.id, nama))
+            creator.append(mention_markdown(a.user.id, name))
     admin.sort()
     badmin.sort()
     totaladmins = len(creator) + len(admin) + len(badmin)
