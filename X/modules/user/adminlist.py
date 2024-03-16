@@ -44,28 +44,28 @@ async def adminlist(client: Client, message: Message):
     badmin.sort()
     totaladmins = len(creator) + len(admin) + len(badmin)
     teks = "**Admins in {}**\n".format(grup.title)
-    teks += "╒═══「 Creator 」\n"
+    teks += "╒═══「 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 」\n"
     for x in creator:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╞══「 {} Human Administrator 」\n".format(len(admin))
+    teks += "╞══「 {} 𝐇𝐮𝐦𝐚𝐧 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫 」\n".format(len(admin))
     for x in admin:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╞══「 {} Bot Administrator 」\n".format(len(badmin))
+    teks += "╞══「 {} 𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫 」\n".format(len(badmin))
     for x in badmin:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╘══「 Total {} Admins 」".format(totaladmins)
+    teks += "╘══「 𝐓𝐨𝐭𝐚𝐥 {} 𝐀𝐝𝐦𝐢𝐧𝐬 」".format(totaladmins)
     if toolong:
         await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
     else:
@@ -74,7 +74,7 @@ async def adminlist(client: Client, message: Message):
 
 @Client.on_message(filters.command(["kickdel", "zombies"], cmd) & filters.me)
 async def kickdel_cmd(client: Client, message: Message):
-    Man = await edit_or_reply(message, "<b>Kicking deleted accounts...</b>")
+    Man = await edit_or_reply(message, "<b>𝐊𝐢𝐜𝐤𝐢𝐧𝐠 𝐝𝐞𝐥𝐞𝐭𝐞𝐝 𝐚𝐜𝐜𝐨𝐮𝐧𝐭𝐬...</b>")
     # noinspection PyTypeChecker
     values = [
         await message.chat.ban_member(user.user.id, int(time()) + 31)
@@ -180,10 +180,10 @@ async def get_list_bots(client: Client, message: Message):
         if a.user.is_bot:
             bots.append(mention_markdown(a.user.id, nama))
     teks = "**𝐀𝐥𝐥 𝐛𝐨𝐭𝐬 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩 {}**\n".format(grup.title)
-    teks += "╒═══「 Bots 」\n"
+    teks += "╒═══「 𝐁𝐨𝐭𝐬 」\n"
     for x in bots:
         teks += "│ • {}\n".format(x)
-    teks += "╘══「 Total {} Bots 」".format(len(bots))
+    teks += "╘══「 𝐓𝐨𝐭𝐚𝐥 {} 𝐁𝐨𝐭𝐬 」".format(len(bots))
     if replyid:
         await client.send_message(message.chat.id, teks, reply_to_message_id=replyid)
     else:
