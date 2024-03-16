@@ -117,7 +117,7 @@ async def create_botlog(client):
     if HAPP is None:
         return
     LOGGER("X").info(
-        "WAIT A MOMENT DEAR. CURRENTLY CREATING A USERBOT LOG GROUP FOR YOU"
+        "WAIT A MOMENT MASTER. CURRENTLY CREATING A USERBOT LOG GROUP FOR YOU"
     )
     desc = "Group Log for Japanese-X-Userbot.\n\PLEASE DO NOT LEAVE THE GROUP INI.\n\nPowered By ~ @Nobitaa_xd ❤️"
     try:
