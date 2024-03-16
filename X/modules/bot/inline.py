@@ -54,10 +54,10 @@ async def alive_function(message: Message, answers):
     msg = f"""
 <b> — Hi, I'm Alive.</b>
 
-<b> • User :</b> {message.from_user.mention}
-<b> • Plugin :</b> <code>{len(CMD_HELP)} Modules</code>
-<b> • Python Version:</b> <code>{pyver.split()[0]}</code>
-<b> • Pyrogram Version :</b> <code>{pyrover}</code>
+<b> • 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 :</b> {message.from_user.mention}
+<b> • 𝙼𝙾𝙳𝚄𝙻𝙴𝚂 :</b> <code>{len(CMD_HELP)} Modules</code>
+<b> • 𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{pyver.split()[0]}</code>
+<b> • 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 :</b> <code>{pyrover}</code>
 <b> • Bot Uptime :</b> <code>{uptime}</code>
 
 <b> — 𝙱𝙾𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.0</b>
