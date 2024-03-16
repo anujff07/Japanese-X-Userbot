@@ -10,7 +10,7 @@ from config import OWNER_ID as owner
 @app.on_callback_query()
 def pmowner(client, callback_query):
     user_id = owner
-    message = "Lol Who is a Dog!!!!"
+    message = "𝐋𝐨𝐥 𝐖𝐡𝐨 𝐢𝐬 𝐚 𝐃𝐨𝐠!!!!"
     client.send_message(user_id, message)
     client.answer_callback_query(callback_query.id, text="Message sent")
 
