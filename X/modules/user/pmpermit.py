@@ -12,7 +12,12 @@ from X.helpers.tools import get_arg
 from .help import *
 
 DEF_UNAPPROVED_MSG = (
- 
+ "❏ ᴘᴍ sᴇᴄᴜʀɪᴛʏ ᴏғ  ˹Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ˼ !\n"
+"├ Mᴏsᴛ Pᴏᴡᴇʀғᴜʟ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇ Tᴇʟᴇɢʀᴀᴍ Usᴇʀʙᴏᴛ\n"
+"├ Mʏ Mᴀsᴛᴇʀ ɪs Bᴜsʏ ʀɪɢʜᴛ ɴᴀᴍᴇ sᴏ Dᴏɴ'ᴛ sᴘᴀᴍ ᴘʟᴇᴀsᴇ ᴏᴛʜᴇʀᴡɪsᴇ I ᴡɪʟʟ ʙʟᴏᴄᴋ ʏᴏᴜ\n"
+"╰ Pᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ\n"
+)
+
 
 @Client.on_message(
     ~filters.me & filters.private & ~filters.bot & filters.incoming, group=69
