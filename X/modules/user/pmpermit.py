@@ -14,7 +14,7 @@ from .help import *
 DEF_UNAPPROVED_MSG = (
  "❏ Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ {mention} !\n"
 "├ Mᴏsᴛ Pᴏᴡᴇʀғᴜʟ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇ Tᴇʟᴇɢʀᴀᴍ Usᴇʀʙᴏᴛ\n"
-"├ Dᴏɴ'ᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ 😈😈
+"├ Dᴏɴᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ 😈😈
 Mʏ Mᴀsᴛᴇʀ {mention} ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ\n"
 "╰ Pᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ\n"
 )
