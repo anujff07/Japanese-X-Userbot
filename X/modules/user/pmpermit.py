@@ -9,7 +9,7 @@ from X.helpers.basic import edit_or_reply
 from X.helpers.SQL.globals import addgvar, delgvar, gvarstatus
 from X.helpers.SQL.pm_permit_sql import approve, dissprove, is_approved
 from X.helpers.tools import get_arg
-from X.help import add_command_help
+from X.help import 
 
 DEF_UNAPPROVED_MSG = """Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ, ғᴏʀ {mention} Pʀᴏᴛᴇᴄᴛɪᴏɴ 
 Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ {mention} ..
