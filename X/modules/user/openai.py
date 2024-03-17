@@ -27,7 +27,7 @@ async def openai(client: Client, message: Message):
     }
 
     json_data = {
-        "model": "text-davinci-003",
+        "model": "gpt-3.5-turbo-instruct",
         "prompt": question,
         "max_tokens": 200,
         "temperature": 0,
