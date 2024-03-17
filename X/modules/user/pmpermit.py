@@ -12,10 +12,15 @@ from X.helpers.tools import get_arg
 from .help import *
 
 DEF_UNAPPROVED_MSG = (
- "Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ {mention} !\n"
-"├ Mᴏsᴛ Pᴏᴡᴇʀғᴜʟ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇ Tᴇʟᴇɢʀᴀᴍ Usᴇʀʙᴏᴛ\n"
-"├ Dᴏɴᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ Mʏ Mᴀsᴛᴇʀ {mention} ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ\n"
-"╰ Pᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ\n"
+    "╔════════════════════╗\n"
+    "     ⛑ 𝗔𝗧𝗧𝗘𝗡𝗧𝗜𝗢𝗡 𝗣𝗟𝗘𝗔𝗦𝗘 ⛑\n"
+    "╚════════════════════╝\n"
+    "• I have not agreed for you to PM.\n"
+    "• Wait until I agree PM anda.\n"
+    "• Don't Spam Chat or you will be automatically blocked.\n"
+    "╔════════════════════╗\n"
+    "    POWERED BY -𝗨𝘀𝗲𝗿𝗕𝗼𝘁\n"
+    "╚════════════════════╝\n"
 )
 
 
