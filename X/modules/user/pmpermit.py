@@ -12,7 +12,7 @@ from X.helpers.tools import get_arg
 from .help import *
 
 DEF_UNAPPROVED_MSG = (
- "❏ Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ {mention} !\n"
+ "Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ {mention} !\n"
 "├ Mᴏsᴛ Pᴏᴡᴇʀғᴜʟ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇ Tᴇʟᴇɢʀᴀᴍ Usᴇʀʙᴏᴛ\n"
 "├ Dᴏɴᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ Mʏ Mᴀsᴛᴇʀ {mention} ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ\n"
 "╰ Pᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴘᴀɴᴇsᴇ-X-Usᴇʀʙᴏᴛ\n"
