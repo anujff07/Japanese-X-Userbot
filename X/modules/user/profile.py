@@ -81,29 +81,24 @@ async def set_bio(client: Client, message: Message):
         return await X.edit("Provide text to set as bio.")
 
 
-@Client.on_message(filters.command("setpfp", cmd) & filters.me)
+@Client.on_message(filters.command("setpfp") & filters.me)
 async def set_pfp(client: Client, message: Message):
     replied = message.reply_to_message
-    if (
-        replied
-        and replied.media
-        and (
-            replied.photo
-            or (replied.document and "image" in replied.document.mime_type)
-        )
-    ):
-        await client.download_media(message=replied, file_name=profile_photo)
-        await client.set_profile_photo(profile_photo)
-        if os.path.exists(profile_photo):
-            os.remove(profile_photo)
-        await message.edit("**Your profile photo has been successfully changed.**")
+    if replied and replied.media:
+        if replied.photo or (replied.document and "image" in replied.document.mime_type):
+            await client.download_media(message=replied, file_name=profile_photo)
+            await client.set_profile_photo(profile_photo)
+            if os.path.exists(profile_photo):
+                os.remove(profile_photo)
+            await message.edit("**Your profile photo has been successfully changed.**")
+        else:
+            await message.edit("`Reply to any photo to set as a profile photo`")
+            await sleep(3)
+            await message.delete()
     else:
-        await message.edit(
-            "`Reply to any photo to set as a profile photo`"
-        )
+        await message.edit("`Reply to any media to set as a profile photo`")
         await sleep(3)
         await message.delete()
-
 
 @Client.on_message(filters.me & filters.command(["vpfp"], cmd))
 async def view_pfp(client: Client, message: Message):
