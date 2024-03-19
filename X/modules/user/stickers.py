@@ -376,23 +376,20 @@ async def tinying(client: Client, message: Message):
     os.remove(ik)
 
 
-@Client.on_message(filters.command(["mmf", "memify"]) & filters.me)
+@Client.on_message(filters.command(["mmf", "memify"], cmd) & filters.me)
 async def memify(client: Client, message: Message):
-    if not message.reply_to_message:
-        await message.edit_text("**Please reply to stickers!**")
+    if not message.reply_to_message_id:
+        await message.edit_text("**Please reply to stikers!**")
         return
-
     reply_message = message.reply_to_message
     if not reply_message.media:
-        await message.edit_text("**Please reply to stickers!**")
+        await message.text("**Please reply to stikers!**")
         return
-
     file = await client.download_media(reply_message)
     mm = await message.edit_text("`Processing . . .`")
-    text = " ".join(message.command[1:])
+    text = get_arg(message)
     if len(text) < 1:
         return await mm.edit("`Please Type `.mmf text")
-
     meme = await add_text_img(file, text)
     await asyncio.gather(
         mm.delete(),
@@ -403,6 +400,7 @@ async def memify(client: Client, message: Message):
         ),
     )
     os.remove(meme)
+
 
 
 @Client.on_message(filters.command(["get", "getsticker", "mtoi"], cmd) & filters.me)
