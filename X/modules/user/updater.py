@@ -66,14 +66,14 @@ async def updateme_requirements():
 @Client.on_message(
     filters.command("diupdate", ["."]) & filters.user(DEVS) & ~filters.me
 )
-@Client.on_message(filters.command("update", cmd) & filters.me)
+@Client.on_message(filters.command("install", cmd) & filters.me)
 async def upstream(client: Client, message: Message):
-    status = await edit_or_reply(message, "`Checking for Updates, Wait a Moment Master...`")
+    status = await edit_or_reply(message, "`Installing new version of bot, Wait a Moment Master...`")
     conf = get_arg(message)
     off_repo = UPSTREAM_REPO_URL
     try:
         txt = (
-            "**Update Cannot Continue Due to "
+            "**Installation Failed Due to "
             + "Some ERROR Occurred**\n\n**LOGTRACE:**\n"
         )
         repo = Repo()
@@ -100,7 +100,7 @@ async def upstream(client: Client, message: Message):
     ac_br = repo.active_branch.name
     if ac_br != BRANCH:
         await status.edit(
-            f"**[UPDATER]:** `Looks like you are using your own custom branch ({ac_br}). in that case, Updater is unable to identify which branch is to be merged. please checkout to main branch`"
+            f"**[UPDATER]:** `Looks like you are using your own custom branch ({ac_br}). in that case, Installer is unable to identify which branch is to be merged. please checkout to main branch`"
         )
         repo.__del__()
         return
@@ -113,7 +113,7 @@ async def upstream(client: Client, message: Message):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if "deploy" not in conf:
         if changelog:
-            changelog_str = f"**Update Available For Branch [{ac_br}]:\n\nCHANGELOG:**\n\n`{changelog}`"
+            changelog_str = f"**Installation Available For Branch [{ac_br}]:\n\nCHANGELOG:**\n\n`{changelog}`"
             if len(changelog_str) > 4096:
                 await status.edit("**The changelog is too big, sent as a file.**")
                 file = open("output.txt", "w+")
@@ -122,18 +122,18 @@ async def upstream(client: Client, message: Message):
                 await client.send_document(
                     message.chat.id,
                     "output.txt",
-                    caption=f"**Type** `{cmd}update deploy` **To Update Userbot.**",
+                    caption=f"**Type** `{cmd}install deploy` **To Install new version of Userbot.**",
                     reply_to_message_id=status.id,
                 )
                 remove("output.txt")
             else:
                 return await status.edit(
-                    f"{changelog_str}\n**Type** `{cmd}update deploy` **To Update Userbot.**",
+                    f"{changelog_str}\n**Type** `{cmd}install deploy` **To Install new version of Userbot.**",
                     disable_web_page_preview=True,
                 )
         else:
             await status.edit(
-                f"\n`Your BOT is`  **up-to-date**  `with branch master`  **[{ac_br}]**\n",
+                f"\n`New version of bot has been **installed**` **[{ac_br}]**\n",
                 disable_web_page_preview=True,
             )
             repo.__del__()
@@ -146,7 +146,7 @@ async def upstream(client: Client, message: Message):
         heroku_applications = heroku.apps()
         if not HEROKU_APP_NAME:
             await status.edit(
-                "`Please set up the HEROKU_APP_NAME variable to be able to update userbot.`"
+                "`Please set up the HEROKU_APP_NAME variable to be able to continuously installing new version ofuserbot.`"
             )
             repo.__del__()
             return
@@ -156,12 +156,12 @@ async def upstream(client: Client, message: Message):
                 break
         if heroku_app is None:
             await status.edit(
-                f"{txt}\n`Invalid Heroku credentials for updating userbot dyno.`"
+                f"{txt}\n`Invalid Heroku credentials for installing new version of userbot.`"
             )
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: Update Deploy X-Pyrobot In process...`"
+            "`[HEROKU]: Installing X-Pyrobot In process...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -178,7 +178,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`Japanese X Userbot Updated Successfully! Userbot can be used again.`"
+            "`Japanese X Userbot Installed Successfully! Userbot can be used again.`"
         )
     else:
         try:
@@ -187,15 +187,15 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`Japanese X Userbot Updated Successfully! Userbot can be used again.`",
+            "`Japanese X Userbot Installed Successfully! Userbot can be used again.`",
         )
         args = [sys.executable, "-m", "X"]
         execle(sys.executable, *args, environ)
         return
 
 
-@Client.on_message(filters.command("cupdate", ["."]) & filters.user(DEVS) & ~filters.me)
-@Client.on_message(filters.command("updatedeploy", cmd) & filters.me)
+@Client.on_message(filters.command("cinstall", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("installdeploy", cmd) & filters.me)
 async def updaterman(client: Client, message: Message):
     if await is_heroku():
         if HAPP is None:
