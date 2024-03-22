@@ -133,7 +133,7 @@ add_command_help(
         ["setbio", "To Change Telegram Bio."],
         [
             "setpfp",
-            f"Reply To Image Type {cmd}setpfp To Change Telegram Profile Photo.",
+            "Reply To Image Type {cmd}setpfp To Change Telegram Profile Photo.",
         ],
         ["vpfp", "To see the current user's profile photo."],
     ],
